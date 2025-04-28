@@ -1,0 +1,187 @@
+@page "/flower-suggestions/{MoodId}"
+@using ColourTherapy.Models
+@using ColourTherapy.Services
+@inject TherapyService TherapyService
+@inject NavigationManager NavigationManager
+
+<div class="results-container">
+    @if (isLoading)
+    {
+        <div class="loading-spinner"></div>
+    }
+    else if (selectedMood != null && flowers != null && flowers.Any())
+    {
+        <div class="card">
+            <h2>Flowers That Complement Your Healing Colors</h2>
+            <p class="subtitle">Nature's remedies that align with your @selectedMood.Name emotional state</p>
+
+            <div class="flower-section">
+                @foreach (var flower in flowers)
+                {
+                    <div class="flower-item">
+                        <div class="flower-image">
+                            <div class="image-placeholder" style="background-color: @GetFlowerColorHex(flower.ColourMatch)">
+                                <span>@flower.Name</span>
+                            </div>
+                        </div>
+                        <div class="flower-details">
+                            <h3>@flower.Name</h3>
+                            <p class="flower-colour">Matches with: @flower.ColourMatch</p>
+                            <p>@flower.Description</p>
+                            <p class="meaning"><strong>Symbolic Meaning:</strong> @flower.SymbolicMeaning</p>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="btn btn-secondary" @onclick="GoBack">View Colors Again</button>
+                <button class="btn" @onclick="ViewSummary">View Summary</button>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="error-message">
+            <p>Sorry, we couldn't find flower recommendations for this mood.</p>
+            <button class="btn btn-secondary" @onclick="GoBack">Go Back</button>
+        </div>
+    }
+</div>
+
+<style>
+    .results-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .subtitle {
+        color: #777;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .flower-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    .flower-item {
+        flex: 1;
+        min-width: 280px;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .flower-image {
+        height: 200px;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+
+    .image-placeholder {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .flower-details {
+        padding: 10px 0;
+    }
+
+    .flower-details h3 {
+        margin-bottom: 5px;
+    }
+
+    .flower-colour {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #666;
+    }
+
+    .meaning {
+        margin-top: 10px;
+        font-style: italic;
+    }
+
+    .navigation-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .error-message {
+        text-align: center;
+        padding: 2rem;
+    }
+</style>
+
+@code {
+    [Parameter]
+    public string MoodId { get; set; }
+
+    private Mood selectedMood;
+    private List<TherapyColour> colours;
+    private List<Flower> flowers;
+    private bool isLoading = true;
+    private Dictionary<string, string> colourHexCodes = new Dictionary<string, string>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var moods = await TherapyService.GetMoodsAsync();
+            selectedMood = moods.FirstOrDefault(m => m.Id == MoodId);
+            
+            if (selectedMood != null)
+            {
+                colours = await TherapyService.GetColoursForMoodAsync(MoodId);
+                
+                // Store hex codes for lookup
+                foreach (var colour in colours)
+                {
+                    colourHexCodes[colour.Name] = colour.HexCode;
+                }
+                
+                flowers = await TherapyService.GetFlowersForColoursAsync(colours);
+            }
+        }
+        catch (Exception)
+        {
+            // Handle error
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private string GetFlowerColorHex(string colourName)
+    {
+        if (colourHexCodes.ContainsKey(colourName))
+            return colourHexCodes[colourName];
+        
+        return "#CCCCCC"; // Default color if not found
+    }
+    
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo($"/colour-suggestions/{MoodId}");
+    }
+
+    private void ViewSummary()
+    {
+        NavigationManager.NavigateTo($"/results-summary/{MoodId}");
+    }
+}

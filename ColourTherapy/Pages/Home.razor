@@ -1,0 +1,74 @@
+﻿@page "/"
+
+<PageTitle>Chromatherapy - Color Healing for Your Emotions</PageTitle>
+
+<div class="home-container">
+    <div class="card intro-card">
+        <h2>Welcome to Chromatherapy</h2>
+        <p class="lead">Discover the healing power of colors for emotional well-being</p>
+        
+        <div class="color-strip">
+            <div style="background-color: #F9D949;"></div>
+            <div style="background-color: #F88379;"></div>
+            <div style="background-color: #ACCBE1;"></div>
+            <div style="background-color: #C8A2C8;"></div>
+            <div style="background-color: #90EE90;"></div>
+        </div>
+
+        <div class="intro-text">
+            <p>Color therapy, also known as chromatherapy, is the practice of using colors to improve physical, 
+            emotional, and mental well-being. Dating back to ancient Egypt, India, and China, this therapeutic 
+            approach recognizes that specific colors can influence our mood, energy levels, and even physical state.</p>
+            
+            <p>Each color carries a unique frequency and vibration that can resonate with different aspects of our being. 
+            By surrounding ourselves with particular colors, we can help balance our emotions and support healing.</p>
+
+            <p>This application helps you discover colors that may benefit your current emotional state, along with 
+            complementary flowers that carry similar healing properties.</p>
+        </div>
+
+        <a href="/mood-selector" class="btn btn-primary mt-4">Begin Your Color Journey</a>
+    </div>
+</div>
+
+<style>
+    .home-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+    }
+
+    .intro-card {
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .intro-text {
+        text-align: left;
+        margin: 2rem 0;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .color-strip {
+        display: flex;
+        justify-content: center;
+        height: 10px;
+        margin: 2rem 0;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .color-strip div {
+        flex: 1;
+        height: 100%;
+    }
+
+    .mt-4 {
+        margin-top: 1.5rem;
+    }
+</style>

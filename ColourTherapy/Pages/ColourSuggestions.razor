@@ -1,0 +1,154 @@
+@page "/colour-suggestions/{MoodId}"
+@using ColourTherapy.Models
+@using ColourTherapy.Services
+@inject TherapyService TherapyService
+@using Microsoft.AspNetCore.Components
+@inject NavigationManager NavigationManager
+
+<div class="results-container">
+    @if (isLoading)
+    {
+        <div class="loading-spinner"></div>
+    }
+    else if (selectedMood != null && colours != null)
+    {
+        <div class="card">
+            <h2>Colors to Balance Your @selectedMood.Name Mood</h2>
+            <p class="subtitle">These colors can help harmonize your emotional state</p>
+
+            <div class="colour-section">
+                @foreach (var colour in colours)
+                {
+                    <div class="colour-item">
+                        <div class="colour-preview" style="background-color: @colour.HexCode">
+                            <span class="colour-name">@colour.Name</span>
+                        </div>
+                        <div class="colour-details">
+                            <p>@colour.Effect</p>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="btn btn-secondary" @onclick="GoBack">Back to Moods</button>
+                <button class="btn" @onclick="ProceedToFlowers">Show Matching Flowers</button>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="error-message">
+            <p>Sorry, we couldn't find color recommendations for this mood.</p>
+            <button class="btn btn-secondary" @onclick="GoBack">Go Back</button>
+        </div>
+    }
+</div>
+
+<style>
+    .results-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .subtitle {
+        color: #777;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .colour-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    .colour-item {
+        flex: 1;
+        min-width: 220px;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colour-preview {
+        height: 180px;
+        border-radius: var(--border-radius);
+        position: relative;
+        transition: transform 0.3s;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .colour-preview:hover {
+        transform: translateY(-5px);
+    }
+
+    .colour-name {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 8px 15px;
+        border-radius: var(--border-radius);
+        margin: 15px;
+        font-weight: 500;
+    }
+
+    .colour-details {
+        padding: 15px 0;
+    }
+
+    .navigation-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .error-message {
+        text-align: center;
+        padding: 2rem;
+    }
+</style>
+
+@code {
+    [Parameter]
+    public string MoodId { get; set; }
+
+    private Mood selectedMood;
+    private List<TherapyColour> colours;
+    private bool isLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var moods = await TherapyService.GetMoodsAsync();
+            selectedMood = moods.FirstOrDefault(m => m.Id == MoodId);
+            
+            if (selectedMood != null)
+            {
+                colours = await TherapyService.GetColoursForMoodAsync(MoodId);
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle error
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo("/mood-selector");
+    }
+
+    private void ProceedToFlowers()
+    {
+        NavigationManager.NavigateTo($"/flower-suggestions/{MoodId}");
+    }
+}

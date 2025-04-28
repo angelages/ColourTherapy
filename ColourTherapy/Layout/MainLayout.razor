@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNetCore.Components
+@inherits LayoutComponentBase
+
+<div class="page">
+    <header>
+        <div class="container">
+            <h1>Chromatherapy</h1>
+            <p>Discover healing colours for emotional balance</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            @Body
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year - Chromatherapy - Color Healing for the Soul</p>
+        </div>
+    </footer>
+
+    @* Decorative floating petals animation *@
+    @for (int i = 1; i <= 10; i++)
+    {
+        <div class="floating-petal" style="left: @(Random.Shared.Next(5, 95))%; animation-duration: @(Random.Shared.Next(10, 25))s; animation-delay: @(Random.Shared.Next(0, 10))s;"></div>
+    }
+</div>

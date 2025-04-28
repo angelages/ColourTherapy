@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Blazor WebAssembly App",
+            "type": "chrome", 
+            "request": "launch",
+            "url": "http://localhost:5039",
+            "webRoot": "${workspaceFolder}/ColourTherapy/wwwroot",
+            "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}"
+        }
+    ]
+}

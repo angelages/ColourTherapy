@@ -1,0 +1,271 @@
+@page "/results-summary/{MoodId}"
+@using ColourTherapy.Models
+@using ColourTherapy.Services
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.JSInterop
+@inject TherapyService TherapyService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+<div class="results-container">
+    @if (isLoading)
+    {
+        <div class="loading-spinner"></div>
+    }
+    else if (therapyResult != null)
+    {
+        <div class="card summary-card">
+            <h2>Your Color Therapy Results</h2>
+            <p class="date">@therapyResult.Date</p>
+
+            <div class="mood-summary">
+                <h3>Current Emotional State: <span class="mood-name">@therapyResult.SelectedMood.Name</span></h3>
+                <p>@therapyResult.SelectedMood.Description</p>
+            </div>
+
+            <div class="section">
+                <h3>Recommended Colors</h3>
+                <div class="colour-pills">
+                    @foreach (var colour in therapyResult.RecommendedColours)
+                    {
+                        <div class="colour-pill-container">
+                            <div class="colour-pill" style="background-color: @colour.HexCode"></div>
+                            <span>@colour.Name</span>
+                        </div>
+                    }
+                </div>
+
+                <div class="colours-summary">
+                    <p>Surrounding yourself with these colors can help:</p>
+                    <ul>
+                        @foreach (var colour in therapyResult.RecommendedColours)
+                        {
+                            <li><strong>@colour.Name</strong>: @colour.Effect</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Complementary Flowers</h3>
+                <div class="flowers-summary">
+                    <p>These flowers align with your recommended colors and can enhance their therapeutic effects:</p>
+                    <ul>
+                        @foreach (var flower in therapyResult.RecommendedFlowers)
+                        {
+                            <li>
+                                <strong>@flower.Name</strong> - 
+                                @flower.Description. <i>Symbolic meaning: @flower.SymbolicMeaning</i>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+
+            <div class="actions-section">
+                <h3>Save or Share Your Results</h3>
+                
+                <div class="action-buttons">
+                    <button class="btn action-btn" @onclick="DownloadResults">
+                        <span class="icon">📥</span> Save as PDF
+                    </button>
+                    <button class="btn action-btn" @onclick="CopyShareLink">
+                        <span class="icon">🔗</span> Copy Share Link
+                    </button>
+                </div>
+                
+                <div class="share-buttons">
+                    <button class="share-button" @onclick="ShareOnTwitter" title="Share on Twitter">
+                        <span class="icon">🐦</span>
+                    </button>
+                    <button class="share-button" @onclick="ShareOnFacebook" title="Share on Facebook">
+                        <span class="icon">👍</span>
+                    </button>
+                    <button class="share-button" @onclick="ShareOnPinterest" title="Share on Pinterest">
+                        <span class="icon">📌</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="btn btn-secondary" @onclick="StartOver">Try Another Mood</button>
+                <button class="btn" @onclick="GoToHome">Return to Home</button>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="error-message">
+            <p>Sorry, we couldn't generate your results summary.</p>
+            <button class="btn btn-secondary" @onclick="StartOver">Start Over</button>
+        </div>
+    }
+</div>
+
+<style>
+    .results-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .summary-card {
+        position: relative;
+    }
+
+    .date {
+        color: #777;
+        margin-bottom: 2rem;
+        text-align: right;
+        font-style: italic;
+    }
+
+    .section {
+        margin: 2rem 0;
+        padding: 1.5rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: var(--border-radius);
+    }
+
+    .mood-name {
+        color: var(--primary-color);
+    }
+
+    .colour-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 1.5rem;
+    }
+
+    .colour-pill-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colour-pill {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .action-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 1rem 0;
+    }
+
+    .action-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+
+    .navigation-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+</style>
+
+@code {
+    [Parameter]
+    public string MoodId { get; set; }
+
+    private TherapyResult therapyResult;
+    private bool isLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var moods = await TherapyService.GetMoodsAsync();
+            var selectedMood = moods.FirstOrDefault(m => m.Id == MoodId);
+            
+            if (selectedMood != null)
+            {
+                var colours = await TherapyService.GetColoursForMoodAsync(MoodId);
+                var flowers = await TherapyService.GetFlowersForColoursAsync(colours);
+                
+                therapyResult = TherapyService.CreateResult(selectedMood, colours, flowers);
+            }
+        }
+        catch (Exception)
+        {
+            // Handle error
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task DownloadResults()
+    {
+        try
+        {
+            await JSRuntime.InvokeVoidAsync("alert", "This feature would generate a PDF of your results in a production app.");
+            // In a real app, we would use a JS library like jsPDF to generate the PDF
+        }
+        catch (Exception)
+        {
+            // Handle error
+        }
+    }
+
+    private async Task CopyShareLink()
+    {
+        try
+        {
+            var currentUrl = NavigationManager.Uri;
+            await JSRuntime.InvokeVoidAsync("navigator.clipboard.writeText", currentUrl);
+            await JSRuntime.InvokeVoidAsync("alert", "Share link copied to clipboard!");
+        }
+        catch (Exception)
+        {
+            // Handle error
+        }
+    }
+    
+    private void ShareOnTwitter()
+    {
+        var text = $"I discovered my healing colors for when I'm feeling {therapyResult.SelectedMood.Name}. Check out Chromatherapy!";
+        var url = NavigationManager.Uri;
+        var shareUrl = $"https://twitter.com/intent/tweet?text={Uri.EscapeDataString(text)}&url={Uri.EscapeDataString(url)}";
+        JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
+    }
+    
+    private void ShareOnFacebook()
+    {
+        var url = NavigationManager.Uri;
+        var shareUrl = $"https://www.facebook.com/sharer/sharer.php?u={Uri.EscapeDataString(url)}";
+        JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
+    }
+    
+    private void ShareOnPinterest()
+    {
+        var description = $"Healing colors for {therapyResult.SelectedMood.Name} emotional states - Chromatherapy";
+        var url = NavigationManager.Uri;
+        var shareUrl = $"https://pinterest.com/pin/create/button/?url={Uri.EscapeDataString(url)}&description={Uri.EscapeDataString(description)}";
+        JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
+    }
+
+    private void StartOver()
+    {
+        NavigationManager.NavigateTo("/mood-selector");
+    }
+
+    private void GoToHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}

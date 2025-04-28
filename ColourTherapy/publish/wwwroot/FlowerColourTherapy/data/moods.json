@@ -1,0 +1,42 @@
+[
+  {
+    "id": "anxious",
+    "name": "Anxious",
+    "description": "Feeling worried, nervous, or uneasy about something with an uncertain outcome."
+  },
+  {
+    "id": "energized",
+    "name": "Energized",
+    "description": "Feeling full of energy and enthusiasm."
+  },
+  {
+    "id": "tired",
+    "name": "Tired",
+    "description": "Feeling in need of rest or sleep; fatigued."
+  },
+  {
+    "id": "hopeful",
+    "name": "Hopeful",
+    "description": "Feeling optimistic about the future."
+  },
+  {
+    "id": "overwhelmed",
+    "name": "Overwhelmed",
+    "description": "Feeling buried or overcome by too many things to deal with."
+  },
+  {
+    "id": "sad",
+    "name": "Sad",
+    "description": "Feeling unhappy or showing sorrow."
+  },
+  {
+    "id": "peaceful",
+    "name": "Peaceful",
+    "description": "Feeling calm and tranquil."
+  },
+  {
+    "id": "inspired",
+    "name": "Inspired",
+    "description": "Feeling mentally stimulated to do or feel something creative."
+  }
+]

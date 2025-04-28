@@ -1,0 +1,82 @@
+@page "/mood-selector"
+@using ColourTherapy.Models
+@using ColourTherapy.Services
+@inject TherapyService TherapyService
+@inject NavigationManager NavigationManager
+
+<h2 class="text-center mb-4">How are you feeling today?</h2>
+<p class="text-center subtitle">Select the emotion that best describes your current state</p>
+
+@if (moods == null)
+{
+    <div class="loading-spinner"></div>
+}
+else
+{
+    <div class="mood-grid">
+        @foreach (var mood in moods)
+        {
+            <div class="card mood-card @(selectedMood?.Id == mood.Id ? "selected" : "")"
+                 @onclick="() => SelectMood(mood)">
+                <h3>@mood.Name</h3>
+                <p>@mood.Description</p>
+            </div>
+        }
+    </div>
+
+    @if (selectedMood != null)
+    {
+        <div class="text-center mt-4">
+            <button class="btn" @onclick="ProceedToColours">Show Me Healing Colors</button>
+        </div>
+    }
+}
+
+<style>
+    .subtitle {
+        color: #777;
+        margin-bottom: 2rem;
+    }
+
+    .mood-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 20px;
+        margin: 2rem 0;
+    }
+
+    .mb-4 {
+        margin-bottom: 2rem;
+    }
+
+    .mt-4 {
+        margin-top: 2rem;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+</style>
+
+@code {
+    private List<Mood> moods;
+    private Mood selectedMood;
+
+    protected override async Task OnInitializedAsync()
+    {
+        moods = await TherapyService.GetMoodsAsync();
+    }
+
+    private void SelectMood(Mood mood)
+    {
+        selectedMood = mood;
+    }
+
+    private void ProceedToColours()
+    {
+        if (selectedMood != null)
+        {
+            NavigationManager.NavigateTo($"/colour-suggestions/{selectedMood.Id}");
+        }
+    }
+}

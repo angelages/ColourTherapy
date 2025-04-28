@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Lavender",
+    "description": "A fragrant herb with purple-blue flowers",
+    "imageUrl": "images/flowers/lavender.jpg",
+    "colourMatch": "Soft Violet",
+    "symbolicMeaning": "Serenity, grace, and calmness"
+  },
+  {
+    "name": "Sunflower",
+    "description": "A tall plant with large yellow flowers",
+    "imageUrl": "images/flowers/sunflower.jpg",
+    "colourMatch": "Sunny Yellow",
+    "symbolicMeaning": "Adoration, loyalty, and longevity"
+  },
+  {
+    "name": "Rose",
+    "description": "A woody perennial flowering plant",
+    "imageUrl": "images/flowers/rose.jpg",
+    "colourMatch": "Ruby Red",
+    "symbolicMeaning": "Love, passion, and courage"
+  },
+  {
+    "name": "Lily",
+    "description": "A flower with large, showy blooms",
+    "imageUrl": "images/flowers/lily.jpg",
+    "colourMatch": "White",
+    "symbolicMeaning": "Purity, rebirth, and self-recovery"
+  },
+  {
+    "name": "Forget-me-not",
+    "description": "Small blue flowers with yellow centers",
+    "imageUrl": "images/flowers/forget-me-not.jpg",
+    "colourMatch": "Soft Blue",
+    "symbolicMeaning": "Remembrance, true love, and faithfulness"
+  },
+  {
+    "name": "Marigold",
+    "description": "Bright yellow or orange flower",
+    "imageUrl": "images/flowers/marigold.jpg",
+    "colourMatch": "Golden Yellow",
+    "symbolicMeaning": "Passion, creativity, and warmth"
+  },
+  {
+    "name": "Peony",
+    "description": "Large flowers with lush, full blooms",
+    "imageUrl": "images/flowers/peony.jpg",
+    "colourMatch": "Pale Pink",
+    "symbolicMeaning": "Compassion, prosperity, and healing"
+  },
+  {
+    "name": "Hydrangea",
+    "description": "Large flower heads composed of small blooms",
+    "imageUrl": "images/flowers/hydrangea.jpg",
+    "colourMatch": "Pale Blue",
+    "symbolicMeaning": "Gratitude, grace, and abundance"
+  },
+  {
+    "name": "Iris",
+    "description": "Distinctive three-petaled flowers",
+    "imageUrl": "images/flowers/iris.jpg",
+    "colourMatch": "Royal Purple",
+    "symbolicMeaning": "Wisdom, faith, and courage"
+  },
+  {
+    "name": "Mint",
+    "description": "Aromatic herb with bright green leaves",
+    "imageUrl": "images/flowers/mint.jpg",
+    "colourMatch": "Mint Green",
+    "symbolicMeaning": "Refreshment, wisdom, and virtue"
+  },
+  {
+    "name": "Coral Rose",
+    "description": "Roses in warm coral hues",
+    "imageUrl": "images/flowers/coral-rose.jpg",
+    "colourMatch": "Coral",
+    "symbolicMeaning": "Desire, enthusiasm, and passion"
+  },
+  {
+    "name": "Blue Hyacinth",
+    "description": "Spring bulb with clustered blue flowers",
+    "imageUrl": "images/flowers/blue-hyacinth.jpg",
+    "colourMatch": "Sky Blue",
+    "symbolicMeaning": "Constancy, sincerity, and peace"
+  },
+  {
+    "name": "Sage",
+    "description": "Herb with soft gray-green leaves",
+    "imageUrl": "images/flowers/sage.jpg",
+    "colourMatch": "Sage Green",
+    "symbolicMeaning": "Wisdom, immortality, and longevity"
+  },
+  {
+    "name": "Turquoise Jade Plant",
+    "description": "Succulent with blue-green leaves",
+    "imageUrl": "images/flowers/jade.jpg",
+    "colourMatch": "Turquoise",
+    "symbolicMeaning": "Growth, renewal, and friendship"
+  },
+  {
+    "name": "Pink Peach Blossom",
+    "description": "Delicate pink flowers on fruit trees",
+    "imageUrl": "images/flowers/peach-blossom.jpg",
+    "colourMatch": "Peach",
+    "symbolicMeaning": "Longevity, growth, and prosperity"
+  },
+  {
+    "name": "Aqua Water Lily",
+    "description": "Floating flowers with broad leaves",
+    "imageUrl": "images/flowers/water-lily.jpg",
+    "colourMatch": "Light Aqua",
+    "symbolicMeaning": "Purity of heart, enlightenment, and rebirth"
+  },
+  {
+    "name": "Tangerine Nasturtium",
+    "description": "Bright orange edible flowers",
+    "imageUrl": "images/flowers/nasturtium.jpg",
+    "colourMatch": "Tangerine",
+    "symbolicMeaning": "Conquest, victory, and abundance"
+  },
+  {
+    "name": "Green Chrysanthemum",
+    "description": "Showy flowers with many petals",
+    "imageUrl": "images/flowers/green-chrysanthemum.jpg",
+    "colourMatch": "Light Green",
+    "symbolicMeaning": "Joy, longevity, and optimism"
+  },
+  {
+    "name": "Indigo Morning Glory",
+    "description": "Trumpet-shaped flowers that bloom in morning",
+    "imageUrl": "images/flowers/morning-glory.jpg", 
+    "colourMatch": "Indigo",
+    "symbolicMeaning": "Affection, mortality, and spiritual growth"
+  },
+  {
+    "name": "Teal Zinnia",
+    "description": "Long-lasting flowers in teal shades",
+    "imageUrl": "images/flowers/teal-zinnia.jpg",
+    "colourMatch": "Soft Teal",
+    "symbolicMeaning": "Endurance, remembrance, and lasting affection"
+  }
+]
