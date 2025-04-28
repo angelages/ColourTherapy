@@ -1,44 +1,42 @@
-name: Deploy Blazor WebAssembly to GitHub Pages
+name: Deploy Blazor WebAssembly App to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # or 'master' if that's your main branch
-
+      - main  # or 'master' if that's your branch
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout the code
+    - name: Checkout source
       uses: actions/checkout@v4
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '9.0.x'
+        dotnet-version: '9.0.x'  # (or 8.0.x if you switch to .NET 8)
 
     - name: Restore dependencies
       run: dotnet restore
 
-    - name: Publish Blazor WebAssembly app
-      run: dotnet publish -c Release -o release --nologo
+    - name: Publish Blazor WebAssembly App
+      run: dotnet publish ColourTherapy.csproj -c Release -o release
 
-    - name: Move index.html and base href
-      run: |
-        cd release/wwwroot
-        sed -i 's|<base href="/"|<base href="/${{ github.event.repository.name }}/"|g' index.html
-
-    - name: Upload artifacts
+    - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: release/wwwroot
+        path: ./release/wwwroot
 
     - name: Deploy to GitHub Pages
       uses: actions/deploy-pages@v4
