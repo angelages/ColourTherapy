@@ -31,7 +31,7 @@ jobs:
       run: dotnet restore
 
     - name: Publish Blazor WebAssembly App
-      run: dotnet publish ColourTherapy.csproj -c Release -o release
+      run: dotnet publish src/ColourTherapy/ColourTherapy.csproj -c Release -o release
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
