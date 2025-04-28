@@ -1,0 +1,38 @@
+name: Deploy Blazor WebAssembly to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # or 'master' if that's your main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'  # Use 8 for stability (even if you're using 9 locally)
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Publish Blazor WebAssembly app
+      run: dotnet publish -c Release -o release --nologo
+
+    - name: Move index.html and base href
+      run: |
+        cd release/wwwroot
+        sed -i 's|<base href="/"|<base href="/${{ github.event.repository.name }}/"|g' index.html
+
+    - name: Upload artifacts
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: release/wwwroot
+
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
