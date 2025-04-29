@@ -31,7 +31,13 @@ jobs:
       run: dotnet restore
 
     - name: Publish Blazor WebAssembly App
-      run: dotnet publish ColourTherapy/ColourTherapy.csproj -c Release -o release
+      run: dotnet publish ColourTherapy/ColourTherapy.csproj -c Release -o release --nologo
+
+    - name: Change base tag in index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/ColourTherapy\/" \/>/g' release/wwwroot/index.html
+
+    - name: Add .nojekyll file
+      run: touch release/wwwroot/.nojekyll
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3

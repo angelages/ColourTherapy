@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Hj9DbmOgs2tuSEjdc05gz+omnRvG/bGGkKn5p/5dQ2s=",
+  "Hash": "yqf5ycEpRGB3w4rseeAe49pGBswWrSyYGVL1o15E3ss=",
   "Source": "ColourTherapy",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "y5mmvqgnes",
-      "Integrity": "tgDWFMw6XGBH99Y8XL4AUKi6i1VsjJPvfi3xTblX+0I=",
+      "Fingerprint": "ynagoqp2c2",
+      "Integrity": "ApaPprqdca6CifANXyC3whYYGduUl6O56CJO+FYsJAQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "n8x4dvtyvm",
-      "Integrity": "uSVlhY+bPGjFZVkZyzwFniok7CTUfDXhsASiEwWvjM8=",
+      "Fingerprint": "b4ujmzdjw5",
+      "Integrity": "xQ6DzxXUjv2ORfPaMwla8GHrmLNHnj9f9PcdHNf59PI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\ColourTherapy.pdb"
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "gt2pfu4kd1",
-      "Integrity": "hMELIR48xax2e8HdDoHf82IOiCi7xXYFbbN+Hpy+3FM=",
+      "Fingerprint": "fj2jsjpog3",
+      "Integrity": "m+uPc9vntBxBvuXfqD35nZ8HQKYTWszynmixAjZ4t4s=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\webcil\\ColourTherapy.wasm"
@@ -6044,6 +6044,27 @@
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.IO.Pipes.wasm"
     },
     {
+      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\a0890a2yss-uhjj2eyq7a.gz",
+      "SourceId": "ColourTherapy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "404#[.{fingerprint=uhjj2eyq7a}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\404.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "eq3kx0a7x8",
+      "Integrity": "5nB3KB6oQIp/5y8EpCI0FpT2B+IHI9/1MM8Rw5RjrMs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\404.html"
+    },
+    {
       "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\a0myrf9ffw-09wnmnw7h6.gz",
       "SourceId": "ColourTherapy",
       "SourceType": "Computed",
@@ -7409,12 +7430,12 @@
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Buffers.wasm"
     },
     {
-      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-snr435ydri.gz",
+      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-ylvj77cp80.gz",
       "SourceId": "ColourTherapy",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "index#[.{fingerprint=snr435ydri}]?.html.gz",
+      "RelativePath": "index#[.{fingerprint=ylvj77cp80}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7423,8 +7444,8 @@
       "RelatedAsset": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7lsnnx2qgx",
-      "Integrity": "hdStjxnpxIz1AhK/EvUeOWEKl0cKunlfqr/wETBdgbM=",
+      "Fingerprint": "3owpogbne1",
+      "Integrity": "ozlThWyNSLtSpJoKblXgik3UOblZ2YNRVNrtIXkzeG4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\index.html"
@@ -8501,12 +8522,12 @@
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Text.Encoding.Extensions.wasm"
     },
     {
-      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-gt2pfu4kd1.gz",
+      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-fj2jsjpog3.gz",
       "SourceId": "ColourTherapy",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ColourTherapy#[.{fingerprint=gt2pfu4kd1}]!.wasm.gz",
+      "RelativePath": "_framework/ColourTherapy#[.{fingerprint=fj2jsjpog3}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8515,14 +8536,14 @@
       "RelatedAsset": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ColourTherapy.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "yscra2l16j",
-      "Integrity": "bmT69Z+XMiboXpg6M/ThRzm/biIaeJcmIlS2lWxHSXY=",
+      "Fingerprint": "bnidh757eh",
+      "Integrity": "WSPnD5UjDyWSGnhe/leoUHV24ZEt5qQtYQ1n6vO9tnY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ColourTherapy.wasm"
     },
     {
-      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rz5lagm32i-y5mmvqgnes.gz",
+      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rz5lagm32i-ynagoqp2c2.gz",
       "SourceId": "ColourTherapy",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\",
@@ -8536,8 +8557,8 @@
       "RelatedAsset": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "1ykg83u0z4",
-      "Integrity": "CaIPVtXREHx2arOrkJPSG3aIfscZmADHZnIQ1KNbXPo=",
+      "Fingerprint": "4vgpss7vmy",
+      "Integrity": "oN0KTLxaG0kaM+cPt7WY5ff2oEoNGXRD9couzGdEes4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -8753,12 +8774,12 @@
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Threading.Channels.wasm"
     },
     {
-      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-n8x4dvtyvm.gz",
+      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-b4ujmzdjw5.gz",
       "SourceId": "ColourTherapy",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ColourTherapy#[.{fingerprint=n8x4dvtyvm}]!.pdb.gz",
+      "RelativePath": "_framework/ColourTherapy#[.{fingerprint=b4ujmzdjw5}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8767,8 +8788,8 @@
       "RelatedAsset": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ColourTherapy.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dygxgljial",
-      "Integrity": "6/cx6/9juk+XHaztbNieuPIQ5U1InxgCLOwtt87LGaQ=",
+      "Fingerprint": "0a0lmj9wyf",
+      "Integrity": "WHm1yBIO6FXTMP49WRWG47kNavHEyckrxiwEaRYzZAM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ColourTherapy.pdb"
@@ -9782,6 +9803,27 @@
       "OriginalItemSpec": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ColourTherapy.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\404.html",
+      "SourceId": "ColourTherapy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "404#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uhjj2eyq7a",
+      "Integrity": "csO3XNuyQSYdBXL5lCQ40BDGThJhGY1/1tiqiVongPI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\404.html"
+    },
+    {
       "Identity": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\css\\app.css",
       "SourceId": "ColourTherapy",
       "SourceType": "Discovered",
@@ -9922,8 +9964,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "snr435ydri",
-      "Integrity": "CNyhBe9yNCk3e9HWoZ4qeFJN06WByOKVOeDjtke+kPc=",
+      "Fingerprint": "ylvj77cp80",
+      "Integrity": "OvaCVcrMa07q7P/4Td1EATsOdTk5tJL1kLc4xgnMoMA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -10915,11 +10957,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tgDWFMw6XGBH99Y8XL4AUKi6i1VsjJPvfi3xTblX+0I=\""
+          "Value": "\"ApaPprqdca6CifANXyC3whYYGduUl6O56CJO+FYsJAQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:38 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10929,18 +10971,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tgDWFMw6XGBH99Y8XL4AUKi6i1VsjJPvfi3xTblX+0I="
+          "Value": "sha256-ApaPprqdca6CifANXyC3whYYGduUl6O56CJO+FYsJAQ="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rz5lagm32i-y5mmvqgnes.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rz5lagm32i-ynagoqp2c2.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000080899604"
+          "Quality": "0.000080906149"
         }
       ],
       "ResponseHeaders": [
@@ -10950,15 +10992,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12360"
+          "Value": "12359"
         },
         {
           "Name": "ETag",
-          "Value": "\"CaIPVtXREHx2arOrkJPSG3aIfscZmADHZnIQ1KNbXPo=\""
+          "Value": "\"oN0KTLxaG0kaM+cPt7WY5ff2oEoNGXRD9couzGdEes4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 07:59:52 GMT"
+          "Value": "Tue, 29 Apr 2025 04:23:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10978,19 +11020,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"tgDWFMw6XGBH99Y8XL4AUKi6i1VsjJPvfi3xTblX+0I=\""
+          "Value": "W/\"ApaPprqdca6CifANXyC3whYYGduUl6O56CJO+FYsJAQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tgDWFMw6XGBH99Y8XL4AUKi6i1VsjJPvfi3xTblX+0I="
+          "Value": "sha256-ApaPprqdca6CifANXyC3whYYGduUl6O56CJO+FYsJAQ="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rz5lagm32i-y5mmvqgnes.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rz5lagm32i-ynagoqp2c2.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10999,7 +11041,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12360"
+          "Value": "12359"
         },
         {
           "Name": "Content-Type",
@@ -11007,11 +11049,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CaIPVtXREHx2arOrkJPSG3aIfscZmADHZnIQ1KNbXPo=\""
+          "Value": "\"oN0KTLxaG0kaM+cPt7WY5ff2oEoNGXRD9couzGdEes4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 07:59:52 GMT"
+          "Value": "Tue, 29 Apr 2025 04:23:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11029,7 +11071,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CaIPVtXREHx2arOrkJPSG3aIfscZmADHZnIQ1KNbXPo="
+          "Value": "sha256-oN0KTLxaG0kaM+cPt7WY5ff2oEoNGXRD9couzGdEes4="
         }
       ]
     },
@@ -11171,168 +11213,7 @@
       ]
     },
     {
-      "Route": "_framework/ColourTherapy.gt2pfu4kd1.wasm",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ColourTherapy.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "64789"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hMELIR48xax2e8HdDoHf82IOiCi7xXYFbbN+Hpy+3FM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gt2pfu4kd1"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ColourTherapy.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hMELIR48xax2e8HdDoHf82IOiCi7xXYFbbN+Hpy+3FM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ColourTherapy.gt2pfu4kd1.wasm",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-gt2pfu4kd1.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000045966444"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21754"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bmT69Z+XMiboXpg6M/ThRzm/biIaeJcmIlS2lWxHSXY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"hMELIR48xax2e8HdDoHf82IOiCi7xXYFbbN+Hpy+3FM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gt2pfu4kd1"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ColourTherapy.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hMELIR48xax2e8HdDoHf82IOiCi7xXYFbbN+Hpy+3FM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ColourTherapy.gt2pfu4kd1.wasm.gz",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-gt2pfu4kd1.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "21754"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bmT69Z+XMiboXpg6M/ThRzm/biIaeJcmIlS2lWxHSXY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gt2pfu4kd1"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/ColourTherapy.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bmT69Z+XMiboXpg6M/ThRzm/biIaeJcmIlS2lWxHSXY="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ColourTherapy.n8x4dvtyvm.pdb",
+      "Route": "_framework/ColourTherapy.b4ujmzdjw5.pdb",
       "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ColourTherapy.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11342,7 +11223,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44124"
+          "Value": "44352"
         },
         {
           "Name": "Content-Type",
@@ -11350,11 +11231,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uSVlhY+bPGjFZVkZyzwFniok7CTUfDXhsASiEwWvjM8=\""
+          "Value": "\"xQ6DzxXUjv2ORfPaMwla8GHrmLNHnj9f9PcdHNf59PI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:38 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11364,7 +11245,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n8x4dvtyvm"
+          "Value": "b4ujmzdjw5"
         },
         {
           "Name": "label",
@@ -11372,18 +11253,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uSVlhY+bPGjFZVkZyzwFniok7CTUfDXhsASiEwWvjM8="
+          "Value": "sha256-xQ6DzxXUjv2ORfPaMwla8GHrmLNHnj9f9PcdHNf59PI="
         }
       ]
     },
     {
-      "Route": "_framework/ColourTherapy.n8x4dvtyvm.pdb",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-n8x4dvtyvm.gz",
+      "Route": "_framework/ColourTherapy.b4ujmzdjw5.pdb",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-b4ujmzdjw5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000029837386"
+          "Quality": "0.000029692093"
         }
       ],
       "ResponseHeaders": [
@@ -11393,15 +11274,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "33514"
+          "Value": "33678"
         },
         {
           "Name": "ETag",
-          "Value": "\"6/cx6/9juk+XHaztbNieuPIQ5U1InxgCLOwtt87LGaQ=\""
+          "Value": "\"WHm1yBIO6FXTMP49WRWG47kNavHEyckrxiwEaRYzZAM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:39 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11421,13 +11302,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uSVlhY+bPGjFZVkZyzwFniok7CTUfDXhsASiEwWvjM8=\""
+          "Value": "W/\"xQ6DzxXUjv2ORfPaMwla8GHrmLNHnj9f9PcdHNf59PI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n8x4dvtyvm"
+          "Value": "b4ujmzdjw5"
         },
         {
           "Name": "label",
@@ -11435,13 +11316,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uSVlhY+bPGjFZVkZyzwFniok7CTUfDXhsASiEwWvjM8="
+          "Value": "sha256-xQ6DzxXUjv2ORfPaMwla8GHrmLNHnj9f9PcdHNf59PI="
         }
       ]
     },
     {
-      "Route": "_framework/ColourTherapy.n8x4dvtyvm.pdb.gz",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-n8x4dvtyvm.gz",
+      "Route": "_framework/ColourTherapy.b4ujmzdjw5.pdb.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-b4ujmzdjw5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11450,7 +11331,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "33514"
+          "Value": "33678"
         },
         {
           "Name": "Content-Type",
@@ -11458,11 +11339,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6/cx6/9juk+XHaztbNieuPIQ5U1InxgCLOwtt87LGaQ=\""
+          "Value": "\"WHm1yBIO6FXTMP49WRWG47kNavHEyckrxiwEaRYzZAM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:39 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11480,7 +11361,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "n8x4dvtyvm"
+          "Value": "b4ujmzdjw5"
         },
         {
           "Name": "label",
@@ -11488,7 +11369,168 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6/cx6/9juk+XHaztbNieuPIQ5U1InxgCLOwtt87LGaQ="
+          "Value": "sha256-WHm1yBIO6FXTMP49WRWG47kNavHEyckrxiwEaRYzZAM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ColourTherapy.fj2jsjpog3.wasm",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ColourTherapy.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64789"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m+uPc9vntBxBvuXfqD35nZ8HQKYTWszynmixAjZ4t4s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 04:28:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fj2jsjpog3"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ColourTherapy.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m+uPc9vntBxBvuXfqD35nZ8HQKYTWszynmixAjZ4t4s="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ColourTherapy.fj2jsjpog3.wasm",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-fj2jsjpog3.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000045699662"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21881"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WSPnD5UjDyWSGnhe/leoUHV24ZEt5qQtYQ1n6vO9tnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 04:28:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"m+uPc9vntBxBvuXfqD35nZ8HQKYTWszynmixAjZ4t4s=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fj2jsjpog3"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ColourTherapy.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m+uPc9vntBxBvuXfqD35nZ8HQKYTWszynmixAjZ4t4s="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ColourTherapy.fj2jsjpog3.wasm.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-fj2jsjpog3.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21881"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WSPnD5UjDyWSGnhe/leoUHV24ZEt5qQtYQ1n6vO9tnY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 04:28:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fj2jsjpog3"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/ColourTherapy.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WSPnD5UjDyWSGnhe/leoUHV24ZEt5qQtYQ1n6vO9tnY="
         }
       ]
     },
@@ -11503,7 +11545,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "44124"
+          "Value": "44352"
         },
         {
           "Name": "Content-Type",
@@ -11511,11 +11553,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uSVlhY+bPGjFZVkZyzwFniok7CTUfDXhsASiEwWvjM8=\""
+          "Value": "\"xQ6DzxXUjv2ORfPaMwla8GHrmLNHnj9f9PcdHNf59PI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:38 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11525,18 +11567,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uSVlhY+bPGjFZVkZyzwFniok7CTUfDXhsASiEwWvjM8="
+          "Value": "sha256-xQ6DzxXUjv2ORfPaMwla8GHrmLNHnj9f9PcdHNf59PI="
         }
       ]
     },
     {
       "Route": "_framework/ColourTherapy.pdb",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-n8x4dvtyvm.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-b4ujmzdjw5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000029837386"
+          "Quality": "0.000029692093"
         }
       ],
       "ResponseHeaders": [
@@ -11546,15 +11588,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "33514"
+          "Value": "33678"
         },
         {
           "Name": "ETag",
-          "Value": "\"6/cx6/9juk+XHaztbNieuPIQ5U1InxgCLOwtt87LGaQ=\""
+          "Value": "\"WHm1yBIO6FXTMP49WRWG47kNavHEyckrxiwEaRYzZAM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:39 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11574,19 +11616,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"uSVlhY+bPGjFZVkZyzwFniok7CTUfDXhsASiEwWvjM8=\""
+          "Value": "W/\"xQ6DzxXUjv2ORfPaMwla8GHrmLNHnj9f9PcdHNf59PI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uSVlhY+bPGjFZVkZyzwFniok7CTUfDXhsASiEwWvjM8="
+          "Value": "sha256-xQ6DzxXUjv2ORfPaMwla8GHrmLNHnj9f9PcdHNf59PI="
         }
       ]
     },
     {
       "Route": "_framework/ColourTherapy.pdb.gz",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-n8x4dvtyvm.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\ti7b9cz47f-b4ujmzdjw5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11595,7 +11637,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "33514"
+          "Value": "33678"
         },
         {
           "Name": "Content-Type",
@@ -11603,11 +11645,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6/cx6/9juk+XHaztbNieuPIQ5U1InxgCLOwtt87LGaQ=\""
+          "Value": "\"WHm1yBIO6FXTMP49WRWG47kNavHEyckrxiwEaRYzZAM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:39 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11625,7 +11667,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6/cx6/9juk+XHaztbNieuPIQ5U1InxgCLOwtt87LGaQ="
+          "Value": "sha256-WHm1yBIO6FXTMP49WRWG47kNavHEyckrxiwEaRYzZAM="
         }
       ]
     },
@@ -11648,11 +11690,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hMELIR48xax2e8HdDoHf82IOiCi7xXYFbbN+Hpy+3FM=\""
+          "Value": "\"m+uPc9vntBxBvuXfqD35nZ8HQKYTWszynmixAjZ4t4s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:38 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11662,18 +11704,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hMELIR48xax2e8HdDoHf82IOiCi7xXYFbbN+Hpy+3FM="
+          "Value": "sha256-m+uPc9vntBxBvuXfqD35nZ8HQKYTWszynmixAjZ4t4s="
         }
       ]
     },
     {
       "Route": "_framework/ColourTherapy.wasm",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-gt2pfu4kd1.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-fj2jsjpog3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000045966444"
+          "Quality": "0.000045699662"
         }
       ],
       "ResponseHeaders": [
@@ -11683,15 +11725,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "21754"
+          "Value": "21881"
         },
         {
           "Name": "ETag",
-          "Value": "\"bmT69Z+XMiboXpg6M/ThRzm/biIaeJcmIlS2lWxHSXY=\""
+          "Value": "\"WSPnD5UjDyWSGnhe/leoUHV24ZEt5qQtYQ1n6vO9tnY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:39 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11711,19 +11753,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hMELIR48xax2e8HdDoHf82IOiCi7xXYFbbN+Hpy+3FM=\""
+          "Value": "W/\"m+uPc9vntBxBvuXfqD35nZ8HQKYTWszynmixAjZ4t4s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hMELIR48xax2e8HdDoHf82IOiCi7xXYFbbN+Hpy+3FM="
+          "Value": "sha256-m+uPc9vntBxBvuXfqD35nZ8HQKYTWszynmixAjZ4t4s="
         }
       ]
     },
     {
       "Route": "_framework/ColourTherapy.wasm.gz",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-gt2pfu4kd1.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\rpcivtqyb1-fj2jsjpog3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11732,7 +11774,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "21754"
+          "Value": "21881"
         },
         {
           "Name": "Content-Type",
@@ -11740,11 +11782,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bmT69Z+XMiboXpg6M/ThRzm/biIaeJcmIlS2lWxHSXY=\""
+          "Value": "\"WSPnD5UjDyWSGnhe/leoUHV24ZEt5qQtYQ1n6vO9tnY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 08:01:39 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11762,7 +11804,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bmT69Z+XMiboXpg6M/ThRzm/biIaeJcmIlS2lWxHSXY="
+          "Value": "sha256-WSPnD5UjDyWSGnhe/leoUHV24ZEt5qQtYQ1n6vO9tnY="
         }
       ]
     },
@@ -71665,6 +71707,304 @@
       ]
     },
     {
+      "Route": "404.html",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\a0890a2yss-uhjj2eyq7a.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002617801047"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "381"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5nB3KB6oQIp/5y8EpCI0FpT2B+IHI9/1MM8Rw5RjrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 04:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"csO3XNuyQSYdBXL5lCQ40BDGThJhGY1/1tiqiVongPI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-csO3XNuyQSYdBXL5lCQ40BDGThJhGY1/1tiqiVongPI="
+        }
+      ]
+    },
+    {
+      "Route": "404.html",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\404.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"csO3XNuyQSYdBXL5lCQ40BDGThJhGY1/1tiqiVongPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 04:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-csO3XNuyQSYdBXL5lCQ40BDGThJhGY1/1tiqiVongPI="
+        }
+      ]
+    },
+    {
+      "Route": "404.html.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\a0890a2yss-uhjj2eyq7a.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "381"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5nB3KB6oQIp/5y8EpCI0FpT2B+IHI9/1MM8Rw5RjrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 04:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5nB3KB6oQIp/5y8EpCI0FpT2B+IHI9/1MM8Rw5RjrMs="
+        }
+      ]
+    },
+    {
+      "Route": "404.uhjj2eyq7a.html",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\a0890a2yss-uhjj2eyq7a.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002617801047"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "381"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5nB3KB6oQIp/5y8EpCI0FpT2B+IHI9/1MM8Rw5RjrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 04:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"csO3XNuyQSYdBXL5lCQ40BDGThJhGY1/1tiqiVongPI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhjj2eyq7a"
+        },
+        {
+          "Name": "label",
+          "Value": "404.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-csO3XNuyQSYdBXL5lCQ40BDGThJhGY1/1tiqiVongPI="
+        }
+      ]
+    },
+    {
+      "Route": "404.uhjj2eyq7a.html",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\404.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"csO3XNuyQSYdBXL5lCQ40BDGThJhGY1/1tiqiVongPI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 04:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhjj2eyq7a"
+        },
+        {
+          "Name": "label",
+          "Value": "404.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-csO3XNuyQSYdBXL5lCQ40BDGThJhGY1/1tiqiVongPI="
+        }
+      ]
+    },
+    {
+      "Route": "404.uhjj2eyq7a.html.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\a0890a2yss-uhjj2eyq7a.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "381"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5nB3KB6oQIp/5y8EpCI0FpT2B+IHI9/1MM8Rw5RjrMs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Apr 2025 04:28:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uhjj2eyq7a"
+        },
+        {
+          "Name": "label",
+          "Value": "404.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5nB3KB6oQIp/5y8EpCI0FpT2B+IHI9/1MM8Rw5RjrMs="
+        }
+      ]
+    },
+    {
       "Route": "ColourTherapy.bundle.scp.css",
       "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\cgizj4mkjj-rmaopebn25.gz",
       "Selectors": [
@@ -73618,12 +73958,12 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-snr435ydri.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-ylvj77cp80.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002079002079"
+          "Quality": "0.001290322581"
         }
       ],
       "ResponseHeaders": [
@@ -73633,15 +73973,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "480"
+          "Value": "774"
         },
         {
           "Name": "ETag",
-          "Value": "\"hdStjxnpxIz1AhK/EvUeOWEKl0cKunlfqr/wETBdgbM=\""
+          "Value": "\"ozlThWyNSLtSpJoKblXgik3UOblZ2YNRVNrtIXkzeG4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:27:34 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -73661,13 +74001,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CNyhBe9yNCk3e9HWoZ4qeFJN06WByOKVOeDjtke+kPc=\""
+          "Value": "W/\"OvaCVcrMa07q7P/4Td1EATsOdTk5tJL1kLc4xgnMoMA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CNyhBe9yNCk3e9HWoZ4qeFJN06WByOKVOeDjtke+kPc="
+          "Value": "sha256-OvaCVcrMa07q7P/4Td1EATsOdTk5tJL1kLc4xgnMoMA="
         }
       ]
     },
@@ -73682,7 +74022,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1020"
+          "Value": "1655"
         },
         {
           "Name": "Content-Type",
@@ -73690,11 +74030,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CNyhBe9yNCk3e9HWoZ4qeFJN06WByOKVOeDjtke+kPc=\""
+          "Value": "\"OvaCVcrMa07q7P/4Td1EATsOdTk5tJL1kLc4xgnMoMA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:27:34 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -73704,13 +74044,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CNyhBe9yNCk3e9HWoZ4qeFJN06WByOKVOeDjtke+kPc="
+          "Value": "sha256-OvaCVcrMa07q7P/4Td1EATsOdTk5tJL1kLc4xgnMoMA="
         }
       ]
     },
     {
       "Route": "index.html.gz",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-snr435ydri.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-ylvj77cp80.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -73719,7 +74059,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "480"
+          "Value": "774"
         },
         {
           "Name": "Content-Type",
@@ -73727,11 +74067,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hdStjxnpxIz1AhK/EvUeOWEKl0cKunlfqr/wETBdgbM=\""
+          "Value": "\"ozlThWyNSLtSpJoKblXgik3UOblZ2YNRVNrtIXkzeG4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:27:34 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -73749,18 +74089,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hdStjxnpxIz1AhK/EvUeOWEKl0cKunlfqr/wETBdgbM="
+          "Value": "sha256-ozlThWyNSLtSpJoKblXgik3UOblZ2YNRVNrtIXkzeG4="
         }
       ]
     },
     {
-      "Route": "index.snr435ydri.html",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-snr435ydri.gz",
+      "Route": "index.ylvj77cp80.html",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-ylvj77cp80.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002079002079"
+          "Quality": "0.001290322581"
         }
       ],
       "ResponseHeaders": [
@@ -73770,15 +74110,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "480"
+          "Value": "774"
         },
         {
           "Name": "ETag",
-          "Value": "\"hdStjxnpxIz1AhK/EvUeOWEKl0cKunlfqr/wETBdgbM=\""
+          "Value": "\"ozlThWyNSLtSpJoKblXgik3UOblZ2YNRVNrtIXkzeG4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:27:34 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -73798,13 +74138,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"CNyhBe9yNCk3e9HWoZ4qeFJN06WByOKVOeDjtke+kPc=\""
+          "Value": "W/\"OvaCVcrMa07q7P/4Td1EATsOdTk5tJL1kLc4xgnMoMA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "snr435ydri"
+          "Value": "ylvj77cp80"
         },
         {
           "Name": "label",
@@ -73812,12 +74152,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CNyhBe9yNCk3e9HWoZ4qeFJN06WByOKVOeDjtke+kPc="
+          "Value": "sha256-OvaCVcrMa07q7P/4Td1EATsOdTk5tJL1kLc4xgnMoMA="
         }
       ]
     },
     {
-      "Route": "index.snr435ydri.html",
+      "Route": "index.ylvj77cp80.html",
       "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -73827,7 +74167,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1020"
+          "Value": "1655"
         },
         {
           "Name": "Content-Type",
@@ -73835,11 +74175,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CNyhBe9yNCk3e9HWoZ4qeFJN06WByOKVOeDjtke+kPc=\""
+          "Value": "\"OvaCVcrMa07q7P/4Td1EATsOdTk5tJL1kLc4xgnMoMA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:27:34 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -73849,7 +74189,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "snr435ydri"
+          "Value": "ylvj77cp80"
         },
         {
           "Name": "label",
@@ -73857,13 +74197,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-CNyhBe9yNCk3e9HWoZ4qeFJN06WByOKVOeDjtke+kPc="
+          "Value": "sha256-OvaCVcrMa07q7P/4Td1EATsOdTk5tJL1kLc4xgnMoMA="
         }
       ]
     },
     {
-      "Route": "index.snr435ydri.html.gz",
-      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-snr435ydri.gz",
+      "Route": "index.ylvj77cp80.html.gz",
+      "AssetFile": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\obj\\Debug\\net9.0\\compressed\\k5492m2n2q-ylvj77cp80.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -73872,7 +74212,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "480"
+          "Value": "774"
         },
         {
           "Name": "Content-Type",
@@ -73880,11 +74220,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hdStjxnpxIz1AhK/EvUeOWEKl0cKunlfqr/wETBdgbM=\""
+          "Value": "\"ozlThWyNSLtSpJoKblXgik3UOblZ2YNRVNrtIXkzeG4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:27:34 GMT"
+          "Value": "Tue, 29 Apr 2025 04:28:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -73902,7 +74242,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "snr435ydri"
+          "Value": "ylvj77cp80"
         },
         {
           "Name": "label",
@@ -73910,7 +74250,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hdStjxnpxIz1AhK/EvUeOWEKl0cKunlfqr/wETBdgbM="
+          "Value": "sha256-ozlThWyNSLtSpJoKblXgik3UOblZ2YNRVNrtIXkzeG4="
         }
       ]
     },

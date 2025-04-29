@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\ColourTherapy.styles.css"
     },
     {
+      "Id": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\404.html",
+      "PackagePath": "staticwebassets\\404.html"
+    },
+    {
       "Id": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },

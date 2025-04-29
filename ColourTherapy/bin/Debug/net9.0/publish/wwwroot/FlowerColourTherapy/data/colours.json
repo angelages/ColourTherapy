@@ -1,0 +1,162 @@
+[
+  {
+    "moodId": "anxious",
+    "colours": [
+      {
+        "name": "Soft Blue",
+        "hexCode": "#ACCBE1",
+        "effect": "Calming and soothing, reduces stress and anxiety"
+      },
+      {
+        "name": "Lavender",
+        "hexCode": "#C8A2C8",
+        "effect": "Promotes relaxation and reduces nervous tension"
+      },
+      {
+        "name": "Sage Green",
+        "hexCode": "#B2AC88",
+        "effect": "Balances emotions and provides a sense of peace"
+      }
+    ]
+  },
+  {
+    "moodId": "energized",
+    "colours": [
+      {
+        "name": "Coral",
+        "hexCode": "#FF7F50",
+        "effect": "Channels excess energy in positive directions"
+      },
+      {
+        "name": "Turquoise",
+        "hexCode": "#40E0D0",
+        "effect": "Brings clarity and balances high energy"
+      },
+      {
+        "name": "Mint Green",
+        "hexCode": "#98FB98",
+        "effect": "Refreshes and provides a cooling effect to overstimulation"
+      }
+    ]
+  },
+  {
+    "moodId": "tired",
+    "colours": [
+      {
+        "name": "Sunny Yellow",
+        "hexCode": "#F9D949",
+        "effect": "Energizes and uplifts, combats fatigue"
+      },
+      {
+        "name": "Tangerine",
+        "hexCode": "#FFA07A",
+        "effect": "Stimulates mental activity and increases vitality"
+      },
+      {
+        "name": "Ruby Red",
+        "hexCode": "#E0115F",
+        "effect": "Boosts energy and stimulates the body"
+      }
+    ]
+  },
+  {
+    "moodId": "hopeful",
+    "colours": [
+      {
+        "name": "Sky Blue",
+        "hexCode": "#87CEEB",
+        "effect": "Expands possibilities and encourages optimism"
+      },
+      {
+        "name": "Peach",
+        "hexCode": "#FFDAB9",
+        "effect": "Nurtures hope and brings gentle encouragement"
+      },
+      {
+        "name": "Light Green",
+        "hexCode": "#90EE90",
+        "effect": "Promotes growth, renewal, and new beginnings"
+      }
+    ]
+  },
+  {
+    "moodId": "overwhelmed",
+    "colours": [
+      {
+        "name": "Pale Pink",
+        "hexCode": "#FFC0CB",
+        "effect": "Soothes emotional distress and provides nurturing energy"
+      },
+      {
+        "name": "Light Aqua",
+        "hexCode": "#7FFFD4",
+        "effect": "Reduces emotional intensity and brings clarity"
+      },
+      {
+        "name": "Soft Violet",
+        "hexCode": "#D8BFD8",
+        "effect": "Calms the mind and helps with emotional balance"
+      }
+    ]
+  },
+  {
+    "moodId": "sad",
+    "colours": [
+      {
+        "name": "Golden Yellow",
+        "hexCode": "#FFD700",
+        "effect": "Uplifts mood and brings joy and optimism"
+      },
+      {
+        "name": "Coral Pink",
+        "hexCode": "#F88379",
+        "effect": "Encourages happiness and emotional healing"
+      },
+      {
+        "name": "Warm Orange",
+        "hexCode": "#FFA500",
+        "effect": "Stimulates feelings of happiness and warmth"
+      }
+    ]
+  },
+  {
+    "moodId": "peaceful",
+    "colours": [
+      {
+        "name": "Soft Teal",
+        "hexCode": "#5F9EA0",
+        "effect": "Deepens existing feelings of calm and tranquility"
+      },
+      {
+        "name": "Lilac",
+        "hexCode": "#C8A2C8",
+        "effect": "Enhances spiritual awareness and peaceful states"
+      },
+      {
+        "name": "Pale Blue",
+        "hexCode": "#B0E0E6",
+        "effect": "Reinforces inner peace and expands tranquil feelings"
+      }
+    ]
+  },
+  {
+    "moodId": "inspired",
+    "colours": [
+      {
+        "name": "Indigo",
+        "hexCode": "#4B0082",
+        "effect": "Enhances intuition and brings deeper insights"
+      },
+      {
+        "name": "White",
+        "hexCode": "#FFFFFF",
+        "effect": "Creates space for new ideas and clarity of thought"
+      },
+      {
+        "name": "Royal Purple",
+        "hexCode": "#7851A9",
+        "effect": "Stimulates imagination and connects to higher inspiration"
+      }
+    ]
+  }
+]
