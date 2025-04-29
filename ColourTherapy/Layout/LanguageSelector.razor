@@ -1,0 +1,71 @@
+@using ColourTherapy.Services
+@inject TranslationService TranslationService
+@inject IJSRuntime JSRuntime
+@implements IDisposable
+
+<div class="language-selector">
+    <select @onchange="OnLanguageChanged" title="Select language">
+        @foreach (var lang in AvailableLanguages)
+        {
+            <option value="@lang" selected="@(lang == TranslationService.CurrentLanguage)">@GetLanguageDisplay(lang)</option>
+        }
+    </select>
+</div>
+
+<style>
+    .language-selector {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .language-selector select {
+        padding: 5px 10px;
+        border-radius: var(--border-radius);
+        border: 1px solid #ddd;
+        background-color: white;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+</style>
+
+@code {
+    private List<string> AvailableLanguages => TranslationService.AvailableLanguages;
+    
+    private async Task OnLanguageChanged(ChangeEventArgs e)
+    {
+        if (e.Value is string newLanguage && newLanguage != TranslationService.CurrentLanguage)
+        {
+            // First, save the selected language to local storage
+            await JSRuntime.InvokeVoidAsync("localStorage.setItem", "preferredLanguage", newLanguage);
+            
+            // Update the current language in the service
+            await TranslationService.SetLanguageAsync(newLanguage);
+            
+            // Force page reload directly from here to ensure immediate update
+            await JSRuntime.InvokeVoidAsync("location.reload");
+        }
+    }
+
+    private string GetLanguageDisplay(string code)
+    {
+        return code switch
+        {
+            "en" => "English",
+            "ko" => "한국어",
+            _ => code.ToUpper()
+        };
+    }    
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await TranslationService.InitializeAsync();
+        TranslationService.OnLanguageChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        TranslationService.OnLanguageChanged -= StateHasChanged;
+    }
+}

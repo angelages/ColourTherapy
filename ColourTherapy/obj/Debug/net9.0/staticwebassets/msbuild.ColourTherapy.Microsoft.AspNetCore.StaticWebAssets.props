@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hvihe3k6uf</Fingerprint>
-      <Integrity>MwwgEPnngciHLwTdAlWqpzr1PbPh73Tvlzn6OAG//MY=</Integrity>
+      <Fingerprint>433ah5iqpv</Fingerprint>
+      <Integrity>4Exp82znRunJVaHX0C6qynVhMmpCsORZqKfZjzc+d00=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\app.css'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>o3qdig4d8x</Fingerprint>
-      <Integrity>ZNdSohx1EyE2Jwiw+81QYA5BHbBr9Haeel2i84NJ5WE=</Integrity>
+      <Fingerprint>p62p879p4f</Fingerprint>
+      <Integrity>r9SqyzCJiF7TOV1oGOSFisMofpfhntY0DiDvCfFcf0E=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\colours.json'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zr72l8ykgg</Fingerprint>
-      <Integrity>IffhXbJic/aQBPd1meBbjKXjpFF4iOhIJMzfCXLrvBU=</Integrity>
+      <Fingerprint>ptrpx9i55x</Fingerprint>
+      <Integrity>HT4f7MTUa4IJF1Mx13s+DbjSOZZcPWTpSHNu5217AAA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\flowers.json'))</OriginalItemSpec>
@@ -102,11 +102,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bbvk9mymbn</Fingerprint>
-      <Integrity>hzyQFk4fJK5jhLuC1z3RiU8PZA70JO3l+349J9xFdOo=</Integrity>
+      <Fingerprint>3a4wja7wh5</Fingerprint>
+      <Integrity>VVchrGB7LaeKSFCUbafU/HARNVRR3++9l3r3uNcxXVg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\moods.json'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\translations.json'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ColourTherapy</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>data/translations.json</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ujxk87idqi</Fingerprint>
+      <Integrity>2sqg2PWTDFMZhqbSg3HBIDOJ3Ivxnqg00qr52DUM/ck=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\translations.json'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))">
       <SourceType>Package</SourceType>

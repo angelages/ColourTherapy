@@ -1,11 +1,15 @@
 ﻿@using Microsoft.AspNetCore.Components
+@using ColourTherapy.Services
+@using ColourTherapy.Layout
 @inherits LayoutComponentBase
+@inject TranslationService TranslationService
 
 <div class="page">
     <header>
         <div class="container">
-            <h1>Chromatherapy</h1>
-            <p>Discover healing colours for emotional balance</p>
+            <h1>@TranslationService.GetTranslation("siteTitle")</h1>
+            <p>@TranslationService.GetTranslation("siteTagline")</p>
+            <LanguageSelector />
         </div>
     </header>
 
@@ -17,7 +21,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; @DateTime.Now.Year - Chromatherapy - Color Healing for the Soul</p>
+            <p>&copy; @DateTime.Now.Year - @TranslationService.GetTranslation("siteTitle") - @TranslationService.GetTranslation("footerText")</p>
         </div>
     </footer>
 
@@ -27,3 +31,10 @@
         <div class="floating-petal" style="left: @(Random.Shared.Next(5, 95))%; animation-duration: @(Random.Shared.Next(10, 25))s; animation-delay: @(Random.Shared.Next(0, 10))s;"></div>
     }
 </div>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await TranslationService.InitializeAsync();
+    }
+}

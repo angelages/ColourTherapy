@@ -1,142 +1,362 @@
-[
-  {
+[  {
     "name": "Lavender",
     "description": "A fragrant herb with purple-blue flowers",
     "imageUrl": "images/flowers/lavender.jpg",
     "colourMatch": "Soft Violet",
-    "symbolicMeaning": "Serenity, grace, and calmness"
-  },
-  {
+    "symbolicMeaning": "Serenity, grace, and calmness",
+    "nameTranslations": {
+      "en": "Lavender",
+      "ko": "라벤더"
+    },
+    "descriptionTranslations": {
+      "en": "A fragrant herb with purple-blue flowers",
+      "ko": "보라색-푸른색 꽃이 있는 향기로운 허브"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Serenity, grace, and calmness",
+      "ko": "평온함, 우아함, 그리고 침착함"
+    }
+  },  {
     "name": "Sunflower",
     "description": "A tall plant with large yellow flowers",
     "imageUrl": "images/flowers/sunflower.jpg",
     "colourMatch": "Sunny Yellow",
-    "symbolicMeaning": "Adoration, loyalty, and longevity"
-  },
-  {
+    "symbolicMeaning": "Adoration, loyalty, and longevity",
+    "nameTranslations": {
+      "en": "Sunflower",
+      "ko": "해바라기"
+    },
+    "descriptionTranslations": {
+      "en": "A tall plant with large yellow flowers",
+      "ko": "큰 노란 꽃이 있는 키가 큰 식물"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Adoration, loyalty, and longevity",
+      "ko": "존경, 충성, 그리고 장수"
+    }
+  },  {
     "name": "Rose",
     "description": "A woody perennial flowering plant",
     "imageUrl": "images/flowers/rose.jpg",
     "colourMatch": "Ruby Red",
-    "symbolicMeaning": "Love, passion, and courage"
-  },
-  {
+    "symbolicMeaning": "Love, passion, and courage",
+    "nameTranslations": {
+      "en": "Rose",
+      "ko": "장미"
+    },
+    "descriptionTranslations": {
+      "en": "A woody perennial flowering plant",
+      "ko": "목질의 다년생 개화 식물"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Love, passion, and courage",
+      "ko": "사랑, 열정, 그리고 용기"
+    }
+  },  {
     "name": "Lily",
     "description": "A flower with large, showy blooms",
     "imageUrl": "images/flowers/lily.jpg",
     "colourMatch": "White",
-    "symbolicMeaning": "Purity, rebirth, and self-recovery"
-  },
-  {
+    "symbolicMeaning": "Purity, rebirth, and self-recovery",
+    "nameTranslations": {
+      "en": "Lily",
+      "ko": "백합"
+    },
+    "descriptionTranslations": {
+      "en": "A flower with large, showy blooms",
+      "ko": "크고 화려한 꽃을 가진 식물"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Purity, rebirth, and self-recovery",
+      "ko": "순수함, 재탄생, 그리고 자기 회복"
+    }
+  },  {
     "name": "Forget-me-not",
     "description": "Small blue flowers with yellow centers",
     "imageUrl": "images/flowers/forget-me-not.jpg",
     "colourMatch": "Soft Blue",
-    "symbolicMeaning": "Remembrance, true love, and faithfulness"
-  },
-  {
+    "symbolicMeaning": "Remembrance, true love, and faithfulness",
+    "nameTranslations": {
+      "en": "Forget-me-not",
+      "ko": "물망초"
+    },
+    "descriptionTranslations": {
+      "en": "Small blue flowers with yellow centers",
+      "ko": "노란색 중심부가 있는 작은 파란색 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Remembrance, true love, and faithfulness",
+      "ko": "기억, 진정한 사랑, 그리고 충실함"
+    }
+  },  {
     "name": "Marigold",
     "description": "Bright yellow or orange flower",
     "imageUrl": "images/flowers/marigold.jpg",
     "colourMatch": "Golden Yellow",
-    "symbolicMeaning": "Passion, creativity, and warmth"
-  },
-  {
+    "symbolicMeaning": "Passion, creativity, and warmth",
+    "nameTranslations": {
+      "en": "Marigold",
+      "ko": "매리골드"
+    },
+    "descriptionTranslations": {
+      "en": "Bright yellow or orange flower",
+      "ko": "밝은 노란색 또는 주황색 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Passion, creativity, and warmth",
+      "ko": "열정, 창의성, 그리고 따뜻함"
+    }
+  },  {
     "name": "Peony",
     "description": "Large flowers with lush, full blooms",
     "imageUrl": "images/flowers/peony.jpg",
     "colourMatch": "Pale Pink",
-    "symbolicMeaning": "Compassion, prosperity, and healing"
-  },
-  {
+    "symbolicMeaning": "Compassion, prosperity, and healing",
+    "nameTranslations": {
+      "en": "Peony",
+      "ko": "모란"
+    },
+    "descriptionTranslations": {
+      "en": "Large flowers with lush, full blooms",
+      "ko": "풍성하고 화려한 대형 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Compassion, prosperity, and healing",
+      "ko": "연민, 번영, 그리고 치유"
+    }
+  },  {
     "name": "Hydrangea",
     "description": "Large flower heads composed of small blooms",
     "imageUrl": "images/flowers/hydrangea.jpg",
     "colourMatch": "Pale Blue",
-    "symbolicMeaning": "Gratitude, grace, and abundance"
-  },
-  {
+    "symbolicMeaning": "Gratitude, grace, and abundance",
+    "nameTranslations": {
+      "en": "Hydrangea",
+      "ko": "수국"
+    },
+    "descriptionTranslations": {
+      "en": "Large flower heads composed of small blooms",
+      "ko": "작은 꽃들이 모여 큰 꽃 덩어리를 형성하는 식물"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Gratitude, grace, and abundance",
+      "ko": "감사, 우아함, 그리고 풍요"
+    }
+  },  {
     "name": "Iris",
     "description": "Distinctive three-petaled flowers",
     "imageUrl": "images/flowers/iris.jpg",
     "colourMatch": "Royal Purple",
-    "symbolicMeaning": "Wisdom, faith, and courage"
-  },
-  {
+    "symbolicMeaning": "Wisdom, faith, and courage",
+    "nameTranslations": {
+      "en": "Iris",
+      "ko": "붓꽃"
+    },
+    "descriptionTranslations": {
+      "en": "Distinctive three-petaled flowers",
+      "ko": "특징적인 세 개의 꽃잎을 가진 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Wisdom, faith, and courage",
+      "ko": "지혜, 믿음, 그리고 용기"
+    }
+  },  {
     "name": "Mint",
     "description": "Aromatic herb with bright green leaves",
     "imageUrl": "images/flowers/mint.jpg",
     "colourMatch": "Mint Green",
-    "symbolicMeaning": "Refreshment, wisdom, and virtue"
-  },
-  {
+    "symbolicMeaning": "Refreshment, wisdom, and virtue",
+    "nameTranslations": {
+      "en": "Mint",
+      "ko": "민트"
+    },
+    "descriptionTranslations": {
+      "en": "Aromatic herb with bright green leaves",
+      "ko": "밝은 녹색 잎이 있는 향기로운 허브"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Refreshment, wisdom, and virtue",
+      "ko": "상쾌함, 지혜, 그리고 미덕"
+    }
+  },  {
     "name": "Coral Rose",
     "description": "Roses in warm coral hues",
     "imageUrl": "images/flowers/coral-rose.jpg",
     "colourMatch": "Coral",
-    "symbolicMeaning": "Desire, enthusiasm, and passion"
-  },
-  {
+    "symbolicMeaning": "Desire, enthusiasm, and passion",
+    "nameTranslations": {
+      "en": "Coral Rose",
+      "ko": "산호 장미"
+    },
+    "descriptionTranslations": {
+      "en": "Roses in warm coral hues",
+      "ko": "따뜻한 산호색 계열의 장미"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Desire, enthusiasm, and passion",
+      "ko": "욕망, 열정, 그리고 정열"
+    }
+  },  {
     "name": "Blue Hyacinth",
     "description": "Spring bulb with clustered blue flowers",
     "imageUrl": "images/flowers/blue-hyacinth.jpg",
     "colourMatch": "Sky Blue",
-    "symbolicMeaning": "Constancy, sincerity, and peace"
-  },
-  {
+    "symbolicMeaning": "Constancy, sincerity, and peace",
+    "nameTranslations": {
+      "en": "Blue Hyacinth",
+      "ko": "파란 히아신스"
+    },
+    "descriptionTranslations": {
+      "en": "Spring bulb with clustered blue flowers",
+      "ko": "봄에 피는 파란색 꽃이 뭉쳐있는 구근 식물"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Constancy, sincerity, and peace",
+      "ko": "불변성, 진심, 그리고 평화"
+    }
+  },  {
     "name": "Sage",
     "description": "Herb with soft gray-green leaves",
     "imageUrl": "images/flowers/sage.jpg",
     "colourMatch": "Sage Green",
-    "symbolicMeaning": "Wisdom, immortality, and longevity"
-  },
-  {
+    "symbolicMeaning": "Wisdom, immortality, and longevity",
+    "nameTranslations": {
+      "en": "Sage",
+      "ko": "세이지"
+    },
+    "descriptionTranslations": {
+      "en": "Herb with soft gray-green leaves",
+      "ko": "부드러운 회색-녹색 잎을 가진 허브"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Wisdom, immortality, and longevity",
+      "ko": "지혜, 불멸, 그리고 장수"
+    }
+  },  {
     "name": "Turquoise Jade Plant",
     "description": "Succulent with blue-green leaves",
     "imageUrl": "images/flowers/jade.jpg",
     "colourMatch": "Turquoise",
-    "symbolicMeaning": "Growth, renewal, and friendship"
-  },
-  {
+    "symbolicMeaning": "Growth, renewal, and friendship",
+    "nameTranslations": {
+      "en": "Turquoise Jade Plant",
+      "ko": "청록색 비취 식물"
+    },
+    "descriptionTranslations": {
+      "en": "Succulent with blue-green leaves",
+      "ko": "청록색 잎을 가진 다육 식물"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Growth, renewal, and friendship",
+      "ko": "성장, 갱신, 그리고 우정"
+    }
+  },  {
     "name": "Pink Peach Blossom",
     "description": "Delicate pink flowers on fruit trees",
     "imageUrl": "images/flowers/peach-blossom.jpg",
     "colourMatch": "Peach",
-    "symbolicMeaning": "Longevity, growth, and prosperity"
-  },
-  {
+    "symbolicMeaning": "Longevity, growth, and prosperity",
+    "nameTranslations": {
+      "en": "Pink Peach Blossom",
+      "ko": "분홍 복숭아꽃"
+    },
+    "descriptionTranslations": {
+      "en": "Delicate pink flowers on fruit trees",
+      "ko": "과일나무에 피는 섬세한 분홍색 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Longevity, growth, and prosperity",
+      "ko": "장수, 성장, 그리고 번영"
+    }
+  },  {
     "name": "Aqua Water Lily",
     "description": "Floating flowers with broad leaves",
     "imageUrl": "images/flowers/water-lily.jpg",
     "colourMatch": "Light Aqua",
-    "symbolicMeaning": "Purity of heart, enlightenment, and rebirth"
-  },
-  {
+    "symbolicMeaning": "Purity of heart, enlightenment, and rebirth",
+    "nameTranslations": {
+      "en": "Aqua Water Lily",
+      "ko": "아쿠아 수련"
+    },
+    "descriptionTranslations": {
+      "en": "Floating flowers with broad leaves",
+      "ko": "넓은 잎을 가진 수상 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Purity of heart, enlightenment, and rebirth",
+      "ko": "마음의 순수함, 깨달음, 그리고 재탄생"
+    }
+  },  {
     "name": "Tangerine Nasturtium",
     "description": "Bright orange edible flowers",
     "imageUrl": "images/flowers/nasturtium.jpg",
     "colourMatch": "Tangerine",
-    "symbolicMeaning": "Conquest, victory, and abundance"
-  },
-  {
+    "symbolicMeaning": "Conquest, victory, and abundance",
+    "nameTranslations": {
+      "en": "Tangerine Nasturtium",
+      "ko": "귤색 한련"
+    },
+    "descriptionTranslations": {
+      "en": "Bright orange edible flowers",
+      "ko": "밝은 주황색의 식용 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Conquest, victory, and abundance",
+      "ko": "정복, 승리, 그리고 풍요"
+    }
+  },  {
     "name": "Green Chrysanthemum",
     "description": "Showy flowers with many petals",
     "imageUrl": "images/flowers/green-chrysanthemum.jpg",
     "colourMatch": "Light Green",
-    "symbolicMeaning": "Joy, longevity, and optimism"
-  },
-  {
+    "symbolicMeaning": "Joy, longevity, and optimism",
+    "nameTranslations": {
+      "en": "Green Chrysanthemum",
+      "ko": "녹색 국화"
+    },
+    "descriptionTranslations": {
+      "en": "Showy flowers with many petals",
+      "ko": "많은 꽃잎을 가진 화려한 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Joy, longevity, and optimism",
+      "ko": "기쁨, 장수, 그리고 낙관주의"
+    }
+  },  {
     "name": "Indigo Morning Glory",
     "description": "Trumpet-shaped flowers that bloom in morning",
     "imageUrl": "images/flowers/morning-glory.jpg", 
     "colourMatch": "Indigo",
-    "symbolicMeaning": "Affection, mortality, and spiritual growth"
-  },
-  {
+    "symbolicMeaning": "Affection, mortality, and spiritual growth",
+    "nameTranslations": {
+      "en": "Indigo Morning Glory",
+      "ko": "남색 나팔꽃"
+    },
+    "descriptionTranslations": {
+      "en": "Trumpet-shaped flowers that bloom in morning",
+      "ko": "아침에 피는 나팔 모양의 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Affection, mortality, and spiritual growth",
+      "ko": "애정, 유한함, 그리고 영적 성장"
+    }
+  },  {
     "name": "Teal Zinnia",
     "description": "Long-lasting flowers in teal shades",
     "imageUrl": "images/flowers/teal-zinnia.jpg",
     "colourMatch": "Soft Teal",
-    "symbolicMeaning": "Endurance, remembrance, and lasting affection"
+    "symbolicMeaning": "Endurance, remembrance, and lasting affection",
+    "nameTranslations": {
+      "en": "Teal Zinnia",
+      "ko": "청록색 백일홍"
+    },
+    "descriptionTranslations": {
+      "en": "Long-lasting flowers in teal shades",
+      "ko": "청록색 계열의 오래 지속되는 꽃"
+    },
+    "symbolicMeaningTranslations": {
+      "en": "Endurance, remembrance, and lasting affection",
+      "ko": "인내, 기억, 그리고 지속적인 애정"
+    }
   }
 ]

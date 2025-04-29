@@ -6,6 +6,7 @@
 @inject TherapyService TherapyService
 @inject NavigationManager NavigationManager
 @inject AppSettings Settings
+@inject TranslationService TranslationService
 
 <div class="results-container">
     @if (isLoading)
@@ -13,36 +14,32 @@
         <div class="loading-spinner"></div>
     }
     else if (selectedMood != null && colours != null)
-    {
-        <div class="card">
-            <h2>Colors to Balance Your @selectedMood.Name Mood</h2>
-            <p class="subtitle">These colors can help harmonize your emotional state</p>
+    {        <div class="card">
+            <h2>@string.Format(TranslationService.GetTranslation("colorSuggestionsTitle"), selectedMood.GetLocalizedName(TranslationService.CurrentLanguage))</h2>
+            <p class="subtitle">@TranslationService.GetTranslation("colorSuggestionsSubtitle")</p>
 
             <div class="colour-section">
                 @foreach (var colour in colours)
                 {
                     <div class="colour-item">
                         <div class="colour-preview" style="background-color: @colour.HexCode">
-                            <span class="colour-name">@colour.Name</span>
+                            <span class="colour-name">@colour.GetLocalizedName(TranslationService.CurrentLanguage)</span>
                         </div>
                         <div class="colour-details">
-                            <p>@colour.Effect</p>
+                            <p>@colour.GetLocalizedEffect(TranslationService.CurrentLanguage)</p>
                         </div>
                     </div>
                 }
-            </div>
-
-            <div class="navigation-buttons">
-                <button class="btn btn-secondary" @onclick="GoBack">Back to Moods</button>
-                <button class="btn" @onclick="ProceedToFlowers">Show Matching Flowers</button>
+            </div><div class="navigation-buttons">
+                <button class="btn btn-secondary" @onclick="GoBack">@TranslationService.GetTranslation("backToMoods")</button>
+                <button class="btn" @onclick="ProceedToFlowers">@TranslationService.GetTranslation("showMatchingFlowers")</button>
             </div>
         </div>
-    }
-    else
+    }    else
     {
         <div class="error-message">
-            <p>Sorry, we couldn't find color recommendations for this mood.</p>
-            <button class="btn btn-secondary" @onclick="GoBack">Go Back</button>
+            <p>@TranslationService.GetTranslation("colorSuggestionsError")</p>
+            <button class="btn btn-secondary" @onclick="GoBack">@TranslationService.GetTranslation("goBack")</button>
         </div>
     }
 </div>
@@ -116,25 +113,28 @@
 
 @code {
     [Parameter]
-    public string MoodId { get; set; }
+    public string? MoodId { get; set; }
 
-    private Mood selectedMood;
-    private List<TherapyColour> colours;
+    private Mood? selectedMood;
+    private List<TherapyColour>? colours;
     private bool isLoading = true;
 
     protected override async Task OnInitializedAsync()
-    {
-        try
+    {        try
         {
+            await TranslationService.InitializeAsync();
             var moods = await TherapyService.GetMoodsAsync();
-            selectedMood = moods.FirstOrDefault(m => m.Id == MoodId);
-            
-            if (selectedMood != null)
+            if (MoodId != null)
             {
-                colours = await TherapyService.GetColoursForMoodAsync(MoodId);
+                selectedMood = moods.FirstOrDefault(m => m.Id == MoodId);
+                
+                if (selectedMood != null)
+                {
+                    colours = await TherapyService.GetColoursForMoodAsync(MoodId);
+                }
             }
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             // Handle error
         }

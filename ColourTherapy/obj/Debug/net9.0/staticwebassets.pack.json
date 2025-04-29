@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\data\\moods.json"
     },
     {
+      "Id": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\data\\translations.json",
+      "PackagePath": "staticwebassets\\data\\translations.json"
+    },
+    {
       "Id": "C:\\Users\\Leo\\Documents\\Sites\\ColourTherapy\\ColourTherapy\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },

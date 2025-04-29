@@ -2,41 +2,102 @@
   {
     "id": "anxious",
     "name": "Anxious",
-    "description": "Feeling worried, nervous, or uneasy about something with an uncertain outcome."
+    "description": "Feeling worried, nervous, or uneasy about something with an uncertain outcome.",
+    "nameTranslations": {
+      "en": "Anxious",
+      "ko": "불안한"
+    },
+    "descriptionTranslations": {
+      "en": "Feeling worried, nervous, or uneasy about something with an uncertain outcome.",
+      "ko": "불확실한 결과에 대해 걱정하거나 불안하거나 불편함을 느끼는 상태."
+    }
   },
   {
     "id": "energized",
     "name": "Energized",
-    "description": "Feeling full of energy and enthusiasm."
-  },
-  {
+    "description": "Feeling full of energy and enthusiasm.",
+    "nameTranslations": {
+      "en": "Energized",
+      "ko": "활기찬"
+    },
+    "descriptionTranslations": {
+      "en": "Feeling full of energy and enthusiasm.",
+      "ko": "에너지와 열정이 가득한 느낌."
+    }
+  },  {
     "id": "tired",
     "name": "Tired",
-    "description": "Feeling in need of rest or sleep; fatigued."
+    "description": "Feeling in need of rest or sleep; fatigued.",
+    "nameTranslations": {
+      "en": "Tired",
+      "ko": "피곤한"
+    },
+    "descriptionTranslations": {
+      "en": "Feeling in need of rest or sleep; fatigued.",
+      "ko": "휴식이나 수면이 필요한 상태; 피로함."
+    }
   },
   {
     "id": "hopeful",
     "name": "Hopeful",
-    "description": "Feeling optimistic about the future."
-  },
-  {
+    "description": "Feeling optimistic about the future.",
+    "nameTranslations": {
+      "en": "Hopeful",
+      "ko": "희망적인"
+    },
+    "descriptionTranslations": {
+      "en": "Feeling optimistic about the future.",
+      "ko": "미래에 대해 낙관적인 느낌."
+    }
+  },  {
     "id": "overwhelmed",
     "name": "Overwhelmed",
-    "description": "Feeling buried or overcome by too many things to deal with."
+    "description": "Feeling buried or overcome by too many things to deal with.",
+    "nameTranslations": {
+      "en": "Overwhelmed",
+      "ko": "부담스러운"
+    },
+    "descriptionTranslations": {
+      "en": "Feeling buried or overcome by too many things to deal with.",
+      "ko": "처리해야 할 일이 너무 많아 부담을 느끼거나 압도당하는 상태."
+    }
   },
   {
     "id": "sad",
     "name": "Sad",
-    "description": "Feeling unhappy or showing sorrow."
-  },
-  {
+    "description": "Feeling unhappy or showing sorrow.",
+    "nameTranslations": {
+      "en": "Sad",
+      "ko": "슬픈"
+    },
+    "descriptionTranslations": {
+      "en": "Feeling unhappy or showing sorrow.",
+      "ko": "불행함을 느끼거나 슬픔을 표현하는 상태."
+    }
+  },  {
     "id": "peaceful",
     "name": "Peaceful",
-    "description": "Feeling calm and tranquil."
+    "description": "Feeling calm and tranquil.",
+    "nameTranslations": {
+      "en": "Peaceful",
+      "ko": "평화로운"
+    },
+    "descriptionTranslations": {
+      "en": "Feeling calm and tranquil.",
+      "ko": "차분하고 고요한 느낌."
+    }
   },
   {
     "id": "inspired",
     "name": "Inspired",
-    "description": "Feeling mentally stimulated to do or feel something creative."
+    "description": "Feeling mentally stimulated to do or feel something creative.",
+    "nameTranslations": {
+      "en": "Inspired",
+      "ko": "영감을 받은"
+    },
+    "descriptionTranslations": {
+      "en": "Feeling mentally stimulated to do or feel something creative.",
+      "ko": "창의적인 것을 하거나 느끼도록 정신적으로 자극받은 상태."
+    }
   }
 ]

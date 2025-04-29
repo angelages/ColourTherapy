@@ -9,6 +9,7 @@
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
 @inject AppSettings Settings
+@inject TranslationService TranslationService
 
 <div class="results-container">
     @if (isLoading)
@@ -16,64 +17,51 @@
         <div class="loading-spinner"></div>
     }
     else if (therapyResult != null)
-    {
-        <div class="card summary-card">
-            <h2>Your Color Therapy Results</h2>
-            <p class="date">@therapyResult.Date</p>
-
-            <div class="mood-summary">
-                <h3>Current Emotional State: <span class="mood-name">@therapyResult.SelectedMood.Name</span></h3>
-                <p>@therapyResult.SelectedMood.Description</p>
-            </div>
-
-            <div class="section">
-                <h3>Recommended Colors</h3>
-                <div class="colour-pills">
-                    @foreach (var colour in therapyResult.RecommendedColours)
+    {        <div class="card summary-card">
+            <h2>@TranslationService.GetTranslation("resultsTitle")</h2>
+            <p class="date">@therapyResult.Date</p>            <div class="mood-summary">
+                <h3>@TranslationService.GetTranslation("currentEmotionalState"): <span class="mood-name">@therapyResult.SelectedMood?.GetLocalizedName(TranslationService.CurrentLanguage)</span></h3>
+                <p>@therapyResult.SelectedMood?.GetLocalizedDescription(TranslationService.CurrentLanguage)</p>
+            </div><div class="section">
+                <h3>@TranslationService.GetTranslation("recommendedColors")</h3>                <div class="colour-pills">
+                    @foreach (var colour in therapyResult?.RecommendedColours ?? new List<TherapyColour>())
                     {
                         <div class="colour-pill-container">
                             <div class="colour-pill" style="background-color: @colour.HexCode"></div>
-                            <span>@colour.Name</span>
+                            <span>@colour.GetLocalizedName(TranslationService.CurrentLanguage)</span>
                         </div>
                     }
-                </div>
-
-                <div class="colours-summary">
-                    <p>Surrounding yourself with these colors can help:</p>
+                </div>                <div class="colours-summary">
+                    <p>@TranslationService.GetTranslation("colorSurroundingHelp")</p>
                     <ul>
-                        @foreach (var colour in therapyResult.RecommendedColours)
+                        @foreach (var colour in therapyResult?.RecommendedColours ?? new List<TherapyColour>())
                         {
-                            <li><strong>@colour.Name</strong>: @colour.Effect</li>
+                            <li><strong>@colour.GetLocalizedName(TranslationService.CurrentLanguage)</strong>: @colour.GetLocalizedEffect(TranslationService.CurrentLanguage)</li>
                         }
                     </ul>
                 </div>
-            </div>
-
-            <div class="section">
-                <h3>Complementary Flowers</h3>
-                <div class="flowers-summary">
-                    <p>These flowers align with your recommended colors and can enhance their therapeutic effects:</p>
+            </div>            <div class="section">
+                <h3>@TranslationService.GetTranslation("complementaryFlowers")</h3>                <div class="flowers-summary">
+                    <p>@TranslationService.GetTranslation("flowersAlign")</p>
                     <ul>
-                        @foreach (var flower in therapyResult.RecommendedFlowers)
+                        @foreach (var flower in therapyResult?.RecommendedFlowers ?? new List<Flower>())
                         {
                             <li>
-                                <strong>@flower.Name</strong> - 
-                                @flower.Description. <i>Symbolic meaning: @flower.SymbolicMeaning</i>
+                                <strong>@flower.GetLocalizedName(TranslationService.CurrentLanguage)</strong> - 
+                                @flower.GetLocalizedDescription(TranslationService.CurrentLanguage). <i>@TranslationService.GetTranslation("symbolicMeaning"): @flower.GetLocalizedSymbolicMeaning(TranslationService.CurrentLanguage)</i>
                             </li>
                         }
                     </ul>
                 </div>
-            </div>
-
-            <div class="actions-section">
-                <h3>Save or Share Your Results</h3>
+            </div>            <div class="actions-section">
+                <h3>@TranslationService.GetTranslation("saveShareResults")</h3>
                 
                 <div class="action-buttons">
                     <button class="btn action-btn" @onclick="DownloadResults">
-                        <span class="icon">📥</span> Save as PDF
+                        <span class="icon">📥</span> @TranslationService.GetTranslation("savePDF")
                     </button>
                     <button class="btn action-btn" @onclick="CopyShareLink">
-                        <span class="icon">🔗</span> Copy Share Link
+                        <span class="icon">🔗</span> @TranslationService.GetTranslation("copyShareLink")
                     </button>
                 </div>
                 
@@ -88,19 +76,16 @@
                         <span class="icon">📌</span>
                     </button>
                 </div>
-            </div>
-
-            <div class="navigation-buttons">
-                <button class="btn btn-secondary" @onclick="StartOver">Try Another Mood</button>
-                <button class="btn" @onclick="GoToHome">Return to Home</button>
+            </div>            <div class="navigation-buttons">
+                <button class="btn btn-secondary" @onclick="StartOver">@TranslationService.GetTranslation("tryAnotherMood")</button>
+                <button class="btn" @onclick="GoToHome">@TranslationService.GetTranslation("returnToHome")</button>
             </div>
         </div>
-    }
-    else
+    }    else
     {
         <div class="error-message">
-            <p>Sorry, we couldn't generate your results summary.</p>
-            <button class="btn btn-secondary" @onclick="StartOver">Start Over</button>
+            <p>@TranslationService.GetTranslation("errorMessage")</p>
+            <button class="btn btn-secondary" @onclick="StartOver">@TranslationService.GetTranslation("startOver")</button>
         </div>
     }
 </div>
@@ -179,21 +164,20 @@
     }
 </style>
 
-@code {
-    [Parameter]
-    public string MoodId { get; set; }
+@code {    [Parameter]
+    public string? MoodId { get; set; }
 
-    private TherapyResult therapyResult;
-    private bool isLoading = true;
-
-    protected override async Task OnInitializedAsync()
+    private TherapyResult? therapyResult;
+    private bool isLoading = true;    protected override async Task OnInitializedAsync()
     {
         try
         {
+            await TranslationService.InitializeAsync();
+            
             var moods = await TherapyService.GetMoodsAsync();
             var selectedMood = moods.FirstOrDefault(m => m.Id == MoodId);
             
-            if (selectedMood != null)
+            if (selectedMood != null && MoodId != null)
             {
                 var colours = await TherapyService.GetColoursForMoodAsync(MoodId);
                 var flowers = await TherapyService.GetFlowersForColoursAsync(colours);
@@ -222,28 +206,28 @@
         {
             // Handle error
         }
-    }
-
-    private async Task CopyShareLink()
+    }    private async Task CopyShareLink()
     {
         try
         {
             var currentUrl = NavigationManager.Uri;
             await JSRuntime.InvokeVoidAsync("navigator.clipboard.writeText", currentUrl);
-            await JSRuntime.InvokeVoidAsync("alert", "Share link copied to clipboard!");
+            await JSRuntime.InvokeVoidAsync("alert", TranslationService.GetTranslation("linkCopied"));
         }
         catch (Exception)
         {
             // Handle error
         }
-    }
-    
-    private void ShareOnTwitter()
+    }    private void ShareOnTwitter()
     {
-        var text = $"I discovered my healing colors for when I'm feeling {therapyResult.SelectedMood.Name}. Check out Chromatherapy!";
-        var url = NavigationManager.Uri;
-        var shareUrl = $"https://twitter.com/intent/tweet?text={Uri.EscapeDataString(text)}&url={Uri.EscapeDataString(url)}";
-        JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
+        if (therapyResult?.SelectedMood != null)
+        {
+            var moodName = therapyResult.SelectedMood.GetLocalizedName(TranslationService.CurrentLanguage);
+            var text = $"{TranslationService.GetTranslation("shareTwitterText")} {moodName}. {TranslationService.GetTranslation("shareCheckOut")}";
+            var url = NavigationManager.Uri;
+            var shareUrl = $"https://twitter.com/intent/tweet?text={Uri.EscapeDataString(text)}&url={Uri.EscapeDataString(url)}";
+            JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
+        }
     }
     
     private void ShareOnFacebook()
@@ -255,11 +239,15 @@
     
     private void ShareOnPinterest()
     {
-        var description = $"Healing colors for {therapyResult.SelectedMood.Name} emotional states - Chromatherapy";
-        var url = NavigationManager.Uri;
-        var shareUrl = $"https://pinterest.com/pin/create/button/?url={Uri.EscapeDataString(url)}&description={Uri.EscapeDataString(description)}";
-        JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
-    }    private void StartOver()
+        if (therapyResult?.SelectedMood != null)
+        {
+            var moodName = therapyResult.SelectedMood.GetLocalizedName(TranslationService.CurrentLanguage);
+            var description = $"{TranslationService.GetTranslation("sharePinterestText")} {moodName} - Chromatherapy";
+            var url = NavigationManager.Uri;
+            var shareUrl = $"https://pinterest.com/pin/create/button/?url={Uri.EscapeDataString(url)}&description={Uri.EscapeDataString(description)}";
+            JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
+        }
+    }private void StartOver()
     {
         NavigationManager.NavigateTo($"{Settings.BasePath}/mood-selector");
     }

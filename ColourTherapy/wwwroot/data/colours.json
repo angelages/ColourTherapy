@@ -1,161 +1,345 @@
 [
   {
     "moodId": "anxious",
-    "colours": [
-      {
+    "colours": [      {
         "name": "Soft Blue",
         "hexCode": "#ACCBE1",
-        "effect": "Calming and soothing, reduces stress and anxiety"
+        "effect": "Calming and soothing, reduces stress and anxiety",
+        "nameTranslations": {
+          "en": "Soft Blue",
+          "ko": "부드러운 파랑"
+        },
+        "effectTranslations": {
+          "en": "Calming and soothing, reduces stress and anxiety",
+          "ko": "진정 효과가 있으며, 스트레스와 불안을 줄여줍니다"
+        }
       },
       {
         "name": "Lavender",
         "hexCode": "#C8A2C8",
-        "effect": "Promotes relaxation and reduces nervous tension"
+        "effect": "Promotes relaxation and reduces nervous tension",
+        "nameTranslations": {
+          "en": "Lavender",
+          "ko": "라벤더"
+        },
+        "effectTranslations": {
+          "en": "Promotes relaxation and reduces nervous tension",
+          "ko": "휴식을 촉진하고 신경 긴장을 줄여줍니다"
+        }
       },
       {
         "name": "Sage Green",
         "hexCode": "#B2AC88",
-        "effect": "Balances emotions and provides a sense of peace"
+        "effect": "Balances emotions and provides a sense of peace",
+        "nameTranslations": {
+          "en": "Sage Green",
+          "ko": "세이지 그린"
+        },
+        "effectTranslations": {
+          "en": "Balances emotions and provides a sense of peace",
+          "ko": "감정의 균형을 맞추고 평화로운 느낌을 제공합니다"
+        }
       }
     ]
   },
   {
     "moodId": "energized",
-    "colours": [
-      {
+    "colours": [      {
         "name": "Coral",
         "hexCode": "#FF7F50",
-        "effect": "Channels excess energy in positive directions"
+        "effect": "Channels excess energy in positive directions",
+        "nameTranslations": {
+          "en": "Coral",
+          "ko": "코랄"
+        },
+        "effectTranslations": {
+          "en": "Channels excess energy in positive directions",
+          "ko": "과잉 에너지를 긍정적인 방향으로 이끌어 줍니다"
+        }
       },
       {
         "name": "Turquoise",
         "hexCode": "#40E0D0",
-        "effect": "Brings clarity and balances high energy"
+        "effect": "Brings clarity and balances high energy",
+        "nameTranslations": {
+          "en": "Turquoise",
+          "ko": "터쿼이즈"
+        },
+        "effectTranslations": {
+          "en": "Brings clarity and balances high energy",
+          "ko": "명확성을 가져오고 높은 에너지의 균형을 잡아줍니다"
+        }
       },
       {
         "name": "Mint Green",
         "hexCode": "#98FB98",
-        "effect": "Refreshes and provides a cooling effect to overstimulation"
+        "effect": "Refreshes and provides a cooling effect to overstimulation",
+        "nameTranslations": {
+          "en": "Mint Green",
+          "ko": "민트 그린"
+        },
+        "effectTranslations": {
+          "en": "Refreshes and provides a cooling effect to overstimulation",
+          "ko": "과도한 자극에 상쾌함과 진정 효과를 제공합니다"
+        }
       }
     ]
-  },
-  {
+  },  {
     "moodId": "tired",
     "colours": [
       {
         "name": "Sunny Yellow",
         "hexCode": "#F9D949",
-        "effect": "Energizes and uplifts, combats fatigue"
+        "effect": "Energizes and uplifts, combats fatigue",
+        "nameTranslations": {
+          "en": "Sunny Yellow",
+          "ko": "밝은 노랑"
+        },
+        "effectTranslations": {
+          "en": "Energizes and uplifts, combats fatigue",
+          "ko": "활력을 주고 기분을 높여주며, 피로감을 해소합니다"
+        }
       },
       {
         "name": "Tangerine",
         "hexCode": "#FFA07A",
-        "effect": "Stimulates mental activity and increases vitality"
+        "effect": "Stimulates mental activity and increases vitality",
+        "nameTranslations": {
+          "en": "Tangerine",
+          "ko": "탠저린"
+        },
+        "effectTranslations": {
+          "en": "Stimulates mental activity and increases vitality",
+          "ko": "정신 활동을 자극하고 활력을 증가시킵니다"
+        }
       },
       {
         "name": "Ruby Red",
         "hexCode": "#E0115F",
-        "effect": "Boosts energy and stimulates the body"
+        "effect": "Boosts energy and stimulates the body",
+        "nameTranslations": {
+          "en": "Ruby Red",
+          "ko": "루비 레드"
+        },
+        "effectTranslations": {
+          "en": "Boosts energy and stimulates the body",
+          "ko": "에너지를 높이고 신체를 자극합니다"
+        }
       }
     ]
-  },
-  {
+  },  {
     "moodId": "hopeful",
     "colours": [
       {
         "name": "Sky Blue",
         "hexCode": "#87CEEB",
-        "effect": "Expands possibilities and encourages optimism"
+        "effect": "Expands possibilities and encourages optimism",
+        "nameTranslations": {
+          "en": "Sky Blue",
+          "ko": "하늘색"
+        },
+        "effectTranslations": {
+          "en": "Expands possibilities and encourages optimism",
+          "ko": "가능성을 확장하고 낙관주의를 격려합니다"
+        }
       },
       {
         "name": "Peach",
         "hexCode": "#FFDAB9",
-        "effect": "Nurtures hope and brings gentle encouragement"
+        "effect": "Nurtures hope and brings gentle encouragement",
+        "nameTranslations": {
+          "en": "Peach",
+          "ko": "복숭아색"
+        },
+        "effectTranslations": {
+          "en": "Nurtures hope and brings gentle encouragement",
+          "ko": "희망을 키우고 부드러운 격려를 가져옵니다"
+        }
       },
       {
         "name": "Light Green",
         "hexCode": "#90EE90",
-        "effect": "Promotes growth, renewal, and new beginnings"
+        "effect": "Promotes growth, renewal, and new beginnings",
+        "nameTranslations": {
+          "en": "Light Green",
+          "ko": "라이트 그린"
+        },
+        "effectTranslations": {
+          "en": "Promotes growth, renewal, and new beginnings",
+          "ko": "성장, 갱신 및 새로운 시작을 촉진합니다"
+        }
       }
     ]
-  },
-  {
+  },  {
     "moodId": "overwhelmed",
     "colours": [
       {
         "name": "Pale Pink",
         "hexCode": "#FFC0CB",
-        "effect": "Soothes emotional distress and provides nurturing energy"
+        "effect": "Soothes emotional distress and provides nurturing energy",
+        "nameTranslations": {
+          "en": "Pale Pink",
+          "ko": "연한 분홍"
+        },
+        "effectTranslations": {
+          "en": "Soothes emotional distress and provides nurturing energy",
+          "ko": "감정적 고통을 진정시키고 양육 에너지를 제공합니다"
+        }
       },
       {
         "name": "Light Aqua",
         "hexCode": "#7FFFD4",
-        "effect": "Reduces emotional intensity and brings clarity"
+        "effect": "Reduces emotional intensity and brings clarity",
+        "nameTranslations": {
+          "en": "Light Aqua",
+          "ko": "라이트 아쿠아"
+        },
+        "effectTranslations": {
+          "en": "Reduces emotional intensity and brings clarity",
+          "ko": "감정적 강도를 줄이고 명확성을 가져옵니다"
+        }
       },
       {
         "name": "Soft Violet",
         "hexCode": "#D8BFD8",
-        "effect": "Calms the mind and helps with emotional balance"
+        "effect": "Calms the mind and helps with emotional balance",
+        "nameTranslations": {
+          "en": "Soft Violet",
+          "ko": "소프트 바이올렛"
+        },
+        "effectTranslations": {
+          "en": "Calms the mind and helps with emotional balance",
+          "ko": "마음을 진정시키고 감정적 균형에 도움을 줍니다"
+        }
       }
     ]
-  },
-  {
+  },  {
     "moodId": "sad",
     "colours": [
       {
         "name": "Golden Yellow",
         "hexCode": "#FFD700",
-        "effect": "Uplifts mood and brings joy and optimism"
+        "effect": "Uplifts mood and brings joy and optimism",
+        "nameTranslations": {
+          "en": "Golden Yellow",
+          "ko": "골든 옐로우"
+        },
+        "effectTranslations": {
+          "en": "Uplifts mood and brings joy and optimism",
+          "ko": "기분을 북돋우고 기쁨과 낙관을 가져옵니다"
+        }
       },
       {
         "name": "Coral Pink",
         "hexCode": "#F88379",
-        "effect": "Encourages happiness and emotional healing"
+        "effect": "Encourages happiness and emotional healing",
+        "nameTranslations": {
+          "en": "Coral Pink",
+          "ko": "코랄 핑크"
+        },
+        "effectTranslations": {
+          "en": "Encourages happiness and emotional healing",
+          "ko": "행복과 감정적 치유를 장려합니다"
+        }
       },
       {
         "name": "Warm Orange",
         "hexCode": "#FFA500",
-        "effect": "Stimulates feelings of happiness and warmth"
+        "effect": "Stimulates feelings of happiness and warmth",
+        "nameTranslations": {
+          "en": "Warm Orange",
+          "ko": "따뜻한 오렌지"
+        },
+        "effectTranslations": {
+          "en": "Stimulates feelings of happiness and warmth",
+          "ko": "행복과 따뜻함의 감정을 자극합니다"
+        }
       }
     ]
-  },
-  {
+  },  {
     "moodId": "peaceful",
     "colours": [
       {
         "name": "Soft Teal",
         "hexCode": "#5F9EA0",
-        "effect": "Deepens existing feelings of calm and tranquility"
+        "effect": "Deepens existing feelings of calm and tranquility",
+        "nameTranslations": {
+          "en": "Soft Teal",
+          "ko": "소프트 틸"
+        },
+        "effectTranslations": {
+          "en": "Deepens existing feelings of calm and tranquility",
+          "ko": "평온함과 고요함의 기존 감정을 더욱 깊게 합니다"
+        }
       },
       {
         "name": "Lilac",
         "hexCode": "#C8A2C8",
-        "effect": "Enhances spiritual awareness and peaceful states"
+        "effect": "Enhances spiritual awareness and peaceful states",
+        "nameTranslations": {
+          "en": "Lilac",
+          "ko": "라일락"
+        },
+        "effectTranslations": {
+          "en": "Enhances spiritual awareness and peaceful states",
+          "ko": "영적 인식과 평화로운 상태를 향상시킵니다"
+        }
       },
       {
         "name": "Pale Blue",
         "hexCode": "#B0E0E6",
-        "effect": "Reinforces inner peace and expands tranquil feelings"
+        "effect": "Reinforces inner peace and expands tranquil feelings",
+        "nameTranslations": {
+          "en": "Pale Blue",
+          "ko": "페일 블루"
+        },
+        "effectTranslations": {
+          "en": "Reinforces inner peace and expands tranquil feelings",
+          "ko": "내면의 평화를 강화하고 고요한 감정을 확장합니다"
+        }
       }
     ]
-  },
-  {
+  },  {
     "moodId": "inspired",
     "colours": [
       {
         "name": "Indigo",
         "hexCode": "#4B0082",
-        "effect": "Enhances intuition and brings deeper insights"
+        "effect": "Enhances intuition and brings deeper insights",
+        "nameTranslations": {
+          "en": "Indigo",
+          "ko": "인디고"
+        },
+        "effectTranslations": {
+          "en": "Enhances intuition and brings deeper insights",
+          "ko": "직관력을 향상시키고 더 깊은 통찰력을 가져옵니다"
+        }
       },
       {
         "name": "White",
         "hexCode": "#FFFFFF",
-        "effect": "Creates space for new ideas and clarity of thought"
+        "effect": "Creates space for new ideas and clarity of thought",
+        "nameTranslations": {
+          "en": "White",
+          "ko": "화이트"
+        },
+        "effectTranslations": {
+          "en": "Creates space for new ideas and clarity of thought",
+          "ko": "새로운 아이디어와 생각의 명확성을 위한 공간을 만듭니다"
+        }
       },
       {
         "name": "Royal Purple",
         "hexCode": "#7851A9",
-        "effect": "Stimulates imagination and connects to higher inspiration"
+        "effect": "Stimulates imagination and connects to higher inspiration",
+        "nameTranslations": {
+          "en": "Royal Purple",
+          "ko": "로열 퍼플"
+        },
+        "effectTranslations": {
+          "en": "Stimulates imagination and connects to higher inspiration",
+          "ko": "상상력을 자극하고 더 높은 영감에 연결됩니다"
+        }
       }
     ]
   }

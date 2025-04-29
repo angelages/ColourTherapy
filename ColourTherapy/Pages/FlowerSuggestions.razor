@@ -5,6 +5,7 @@
 @inject TherapyService TherapyService
 @inject NavigationManager NavigationManager
 @inject AppSettings Settings
+@inject TranslationService TranslationService
 
 <div class="results-container">
     @if (isLoading)
@@ -12,10 +13,8 @@
         <div class="loading-spinner"></div>
     }
     else if (selectedMood != null && flowers != null && flowers.Any())
-    {
-        <div class="card">
-            <h2>Flowers That Complement Your Healing Colors</h2>
-            <p class="subtitle">Nature's remedies that align with your @selectedMood.Name emotional state</p>
+    {        <div class="card">            <h2>@TranslationService.GetTranslation("flowerSuggestionsTitle")</h2>
+            <p class="subtitle">@string.Format(TranslationService.GetTranslation("flowerSuggestionsSubtitle"), selectedMood.GetLocalizedName(TranslationService.CurrentLanguage))</p>
 
             <div class="flower-section">
                 @foreach (var flower in flowers)
@@ -23,30 +22,26 @@
                     <div class="flower-item">
                         <div class="flower-image">
                             <div class="image-placeholder" style="background-color: @GetFlowerColorHex(flower.ColourMatch)">
-                                <span>@flower.Name</span>
+                                <span>@flower.GetLocalizedName(TranslationService.CurrentLanguage)</span>
                             </div>
-                        </div>
-                        <div class="flower-details">
-                            <h3>@flower.Name</h3>
-                            <p class="flower-colour">Matches with: @flower.ColourMatch</p>
-                            <p>@flower.Description</p>
-                            <p class="meaning"><strong>Symbolic Meaning:</strong> @flower.SymbolicMeaning</p>
+                        </div>                        <div class="flower-details">
+                            <h3>@flower.GetLocalizedName(TranslationService.CurrentLanguage)</h3>
+                            <p class="flower-colour">@TranslationService.GetTranslation("flowerMatches") @GetLocalizedColorName(flower.ColourMatch)</p>
+                            <p>@flower.GetLocalizedDescription(TranslationService.CurrentLanguage)</p>
+                            <p class="meaning"><strong>@TranslationService.GetTranslation("flowerSymbolicMeaning")</strong> @flower.GetLocalizedSymbolicMeaning(TranslationService.CurrentLanguage)</p>
                         </div>
                     </div>
                 }
-            </div>
-
-            <div class="navigation-buttons">
-                <button class="btn btn-secondary" @onclick="GoBack">View Colors Again</button>
-                <button class="btn" @onclick="ViewSummary">View Summary</button>
+            </div>            <div class="navigation-buttons">
+                <button class="btn btn-secondary" @onclick="GoBack">@TranslationService.GetTranslation("viewColorsAgain")</button>
+                <button class="btn" @onclick="ViewSummary">@TranslationService.GetTranslation("viewSummary")</button>
             </div>
         </div>
-    }
-    else
+    }    else
     {
         <div class="error-message">
-            <p>Sorry, we couldn't find flower recommendations for this mood.</p>
-            <button class="btn btn-secondary" @onclick="GoBack">Go Back</button>
+            <p>@TranslationService.GetTranslation("flowerError")</p>
+            <button class="btn btn-secondary" @onclick="GoBack">@TranslationService.GetTranslation("goBack")</button>
         </div>
     }
 </div>
@@ -131,32 +126,38 @@
 
 @code {
     [Parameter]
-    public string MoodId { get; set; }
+    public string? MoodId { get; set; }
 
-    private Mood selectedMood;
-    private List<TherapyColour> colours;
-    private List<Flower> flowers;
+    private Mood? selectedMood;
+    private List<TherapyColour>? colours;
+    private List<Flower>? flowers;
     private bool isLoading = true;
-    private Dictionary<string, string> colourHexCodes = new Dictionary<string, string>();
-
-    protected override async Task OnInitializedAsync()
+    private Dictionary<string, string> colourHexCodes = new Dictionary<string, string>();    protected override async Task OnInitializedAsync()
     {
         try
         {
+            await TranslationService.InitializeAsync();
             var moods = await TherapyService.GetMoodsAsync();
-            selectedMood = moods.FirstOrDefault(m => m.Id == MoodId);
             
-            if (selectedMood != null)
+            if (MoodId != null)
             {
-                colours = await TherapyService.GetColoursForMoodAsync(MoodId);
+                selectedMood = moods.FirstOrDefault(m => m.Id == MoodId);
                 
-                // Store hex codes for lookup
-                foreach (var colour in colours)
+                if (selectedMood != null)
                 {
-                    colourHexCodes[colour.Name] = colour.HexCode;
+                    colours = await TherapyService.GetColoursForMoodAsync(MoodId);
+                    
+                    if (colours != null)
+                    {                        // Store hex codes for lookup
+                        foreach (var colour in colours)
+                        {
+                            if (colour.Name != null && colour.HexCode != null)
+                                colourHexCodes[colour.Name] = colour.HexCode;
+                        }
+                        
+                        flowers = await TherapyService.GetFlowersForColoursAsync(colours);
+                    }
                 }
-                
-                flowers = await TherapyService.GetFlowersForColoursAsync(colours);
             }
         }
         catch (Exception)
@@ -167,16 +168,30 @@
         {
             isLoading = false;
         }
-    }
-
-    private string GetFlowerColorHex(string colourName)
+    }    private string GetFlowerColorHex(string? colourName)
     {
-        if (colourHexCodes.ContainsKey(colourName))
+        if (colourName != null && colourHexCodes.ContainsKey(colourName))
             return colourHexCodes[colourName];
         
         return "#CCCCCC"; // Default color if not found
     }
-      private void GoBack()
+    
+    private string GetLocalizedColorName(string? colourName)
+    {
+        if (colourName == null)
+            return string.Empty;
+            
+        // Find the matching TherapyColour from our loaded colours list
+        var matchingColour = colours?.FirstOrDefault(c => c.Name == colourName);
+        
+        if (matchingColour != null)
+            return matchingColour.GetLocalizedName(TranslationService.CurrentLanguage);
+            
+        // Return the original name if no match is found
+        return colourName;
+    }
+      
+    private void GoBack()
     {
         NavigationManager.NavigateTo($"{Settings.BasePath}/colour-suggestions/{MoodId}");
     }

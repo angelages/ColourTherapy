@@ -5,31 +5,30 @@
 @inject TherapyService TherapyService
 @inject NavigationManager NavigationManager
 @inject AppSettings Settings
+@inject TranslationService TranslationService
+@inject TranslationService TranslationService
 
-<h2 class="text-center mb-4">How are you feeling today?</h2>
-<p class="text-center subtitle">Select the emotion that best describes your current state</p>
+<h2 class="text-center mb-4">@TranslationService.GetTranslation("moodSelectorTitle")</h2>
+<p class="text-center subtitle">@TranslationService.GetTranslation("moodSelectorSubtitle")</p>
 
 @if (moods == null)
 {
     <div class="loading-spinner"></div>
 }
 else
-{
-    <div class="mood-grid">
+{    <div class="mood-grid">
         @foreach (var mood in moods)
         {
             <div class="card mood-card @(selectedMood?.Id == mood.Id ? "selected" : "")"
                  @onclick="() => SelectMood(mood)">
-                <h3>@mood.Name</h3>
-                <p>@mood.Description</p>
+                <h3>@mood.GetLocalizedName(TranslationService.CurrentLanguage)</h3>
+                <p>@mood.GetLocalizedDescription(TranslationService.CurrentLanguage)</p>
             </div>
         }
-    </div>
-
-    @if (selectedMood != null)
+    </div>    @if (selectedMood != null)
     {
         <div class="text-center mt-4">
-            <button class="btn" @onclick="ProceedToColours">Show Me Healing Colors</button>
+            <button class="btn" @onclick="ProceedToColours">@TranslationService.GetTranslation("moodSelectorButton")</button>
         </div>
     }
 }
@@ -61,11 +60,10 @@ else
 </style>
 
 @code {
-    private List<Mood> moods;
-    private Mood selectedMood;
-
-    protected override async Task OnInitializedAsync()
+    private List<Mood>? moods;
+    private Mood? selectedMood;    protected override async Task OnInitializedAsync()
     {
+        await TranslationService.InitializeAsync();
         moods = await TherapyService.GetMoodsAsync();
     }
 
