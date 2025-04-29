@@ -1,6 +1,6 @@
 ﻿<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">ColourTherapy</a>
+        <a class="navbar-brand" href="@Settings.BasePath/">ColourTherapy</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -13,19 +13,21 @@
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
+        </div>        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="@($"{Settings.BasePath}/counter")">
                 <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
+            <NavLink class="nav-link" href="@($"{Settings.BasePath}/weather")">
                 <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
             </NavLink>
         </div>
     </nav>
 </div>
+
+@using ColourTherapy
+@inject AppSettings Settings
 
 @code {
     private bool collapseNavMenu = true;

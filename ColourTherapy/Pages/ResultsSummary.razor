@@ -4,9 +4,11 @@
 @using Microsoft.AspNetCore.Components
 @using Microsoft.AspNetCore.Components.Web
 @using Microsoft.JSInterop
+@using ColourTherapy
 @inject TherapyService TherapyService
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
+@inject AppSettings Settings
 
 <div class="results-container">
     @if (isLoading)
@@ -257,15 +259,13 @@
         var url = NavigationManager.Uri;
         var shareUrl = $"https://pinterest.com/pin/create/button/?url={Uri.EscapeDataString(url)}&description={Uri.EscapeDataString(description)}";
         JSRuntime.InvokeVoidAsync("open", shareUrl, "_blank");
-    }
-
-    private void StartOver()
+    }    private void StartOver()
     {
-        NavigationManager.NavigateTo("/mood-selector");
+        NavigationManager.NavigateTo($"{Settings.BasePath}/mood-selector");
     }
 
     private void GoToHome()
     {
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo($"{Settings.BasePath}/");
     }
 }

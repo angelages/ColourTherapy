@@ -1,4 +1,6 @@
 ﻿@page "/"
+@using ColourTherapy
+@inject AppSettings Settings
 
 <PageTitle>Chromatherapy - Color Healing for Your Emotions</PageTitle>
 
@@ -27,7 +29,7 @@
             complementary flowers that carry similar healing properties.</p>
         </div>
 
-        <a href="/mood-selector" class="btn btn-primary mt-4">Begin Your Color Journey</a>
+        <a href="@($"{Settings.BasePath}/mood-selector")" class="btn btn-primary mt-4">Begin Your Color Journey</a>
     </div>
 </div>
 

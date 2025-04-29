@@ -1,8 +1,10 @@
 @page "/flower-suggestions/{MoodId}"
 @using ColourTherapy.Models
 @using ColourTherapy.Services
+@using ColourTherapy
 @inject TherapyService TherapyService
 @inject NavigationManager NavigationManager
+@inject AppSettings Settings
 
 <div class="results-container">
     @if (isLoading)
@@ -174,14 +176,13 @@
         
         return "#CCCCCC"; // Default color if not found
     }
-    
-    private void GoBack()
+      private void GoBack()
     {
-        NavigationManager.NavigateTo($"/colour-suggestions/{MoodId}");
+        NavigationManager.NavigateTo($"{Settings.BasePath}/colour-suggestions/{MoodId}");
     }
 
     private void ViewSummary()
     {
-        NavigationManager.NavigateTo($"/results-summary/{MoodId}");
+        NavigationManager.NavigateTo($"{Settings.BasePath}/results-summary/{MoodId}");
     }
 }

@@ -1,9 +1,11 @@
 @page "/colour-suggestions/{MoodId}"
 @using ColourTherapy.Models
 @using ColourTherapy.Services
-@inject TherapyService TherapyService
+@using ColourTherapy
 @using Microsoft.AspNetCore.Components
+@inject TherapyService TherapyService
 @inject NavigationManager NavigationManager
+@inject AppSettings Settings
 
 <div class="results-container">
     @if (isLoading)
@@ -140,15 +142,13 @@
         {
             isLoading = false;
         }
-    }
-
-    private void GoBack()
+    }    private void GoBack()
     {
-        NavigationManager.NavigateTo("/mood-selector");
+        NavigationManager.NavigateTo($"{Settings.BasePath}/mood-selector");
     }
 
     private void ProceedToFlowers()
     {
-        NavigationManager.NavigateTo($"/flower-suggestions/{MoodId}");
+        NavigationManager.NavigateTo($"{Settings.BasePath}/flower-suggestions/{MoodId}");
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ColourTherapy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56571b012fa6006f6b48f8d7a2de36bd5078c582")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+034acfcab07583e691ab5942c31b0261905dff0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ColourTherapy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ColourTherapy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

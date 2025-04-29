@@ -1,8 +1,10 @@
 @page "/mood-selector"
 @using ColourTherapy.Models
 @using ColourTherapy.Services
+@using ColourTherapy
 @inject TherapyService TherapyService
 @inject NavigationManager NavigationManager
+@inject AppSettings Settings
 
 <h2 class="text-center mb-4">How are you feeling today?</h2>
 <p class="text-center subtitle">Select the emotion that best describes your current state</p>
@@ -70,13 +72,11 @@ else
     private void SelectMood(Mood mood)
     {
         selectedMood = mood;
-    }
-
-    private void ProceedToColours()
+    }    private void ProceedToColours()
     {
         if (selectedMood != null)
         {
-            NavigationManager.NavigateTo($"/colour-suggestions/{selectedMood.Id}");
+            NavigationManager.NavigateTo($"{Settings.BasePath}/colour-suggestions/{selectedMood.Id}");
         }
     }
 }
